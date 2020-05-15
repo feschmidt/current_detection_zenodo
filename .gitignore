@@ -5,6 +5,9 @@
 *.pdf
 *.gif
 *.pptx
+*.tif
+*.jpg
+*.jpeg
 
 # Directories
 tex/
