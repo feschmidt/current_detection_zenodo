@@ -23,6 +23,19 @@ def Lj(I, Ic):
 
 def f0(I, fr, Lr, Ic, nJJ=1):
     # each JJ shifts the resonance frequency further downwards
+    return fr * (Lr+nJJ*Lj(I, Ic))/ (Lr + 2*nJJ*Lj(I, Ic))
+
+
+def f0leads(I, fr, Lr, Ic, nJJ=1, Lg=27e-12):
+    # each JJ shifts the resonance frequency further downwards
+    # assuming additional lead inductance
+    return fr (Lr + (nJJ*Lj(I, Ic)+Lg)) / (Lr + 2*(nJJ*Lj(I, Ic)+Lg))
+
+'''
+deprecated, wrong boundary condition
+
+def f0(I, fr, Lr, Ic, nJJ=1):
+    # each JJ shifts the resonance frequency further downwards
     return fr / (1 + nJJ*Lj(I, Ic) / Lr)
 
 
@@ -30,7 +43,7 @@ def f0leads(I, fr, Lr, Ic, nJJ=1, Lg=27e-12):
     # each JJ shifts the resonance frequency further downwards
     # assuming additional lead inductance
     return fr / (1 + (nJJ*Lj(I, Ic)+Lg) / Lr)
-
+'''
 
 def f0Lk(I, fk0, alpha, Istar):
     # absolute resonance frequency shift due to partial kinetic inductance

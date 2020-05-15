@@ -13,11 +13,13 @@
 tex/
 figdump/
 *.tar.gz
+*.zip
 
 # ASCII files
 *.dat
 *.meta.txt
 *.csv
+*.mtx
 
 # Python files
 mytest.py
