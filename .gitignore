@@ -23,7 +23,7 @@ figdump/
 
 # Python files
 mytest.py
-*.ipynb
+#*.ipynb
 .ipynb_checkpoints/
 __pycache__/
 *.pyc

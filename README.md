@@ -58,7 +58,8 @@ tree_info.txt
 
 ## Data processing and figure generation
 
-The python scripts located in the top-level folder need to be executed in the following order to generate the final figures from the raw measurement data:
+The python scripts located in the top-level folder are executed in the below order to generate the final figures from the raw measurement data.
+For this, simply execute `bash runall.sh`, which performs the required execution and zips all figures.
 
 1. analysis_classes.py
 2. calibration_inputpower.py
@@ -70,7 +71,7 @@ The python scripts located in the top-level folder need to be executed in the fo
 8. Investigating_lossrates.py
 9. model_inputoutput_vs_Iset.py
 10. processing_data_F33C_4000_peaks.py
-11. processing_data_F33C_all_peaks
+11. processing_data_F33C_all_peaks.py
 12. model_inputoutput_vs_Delta.py
 13. processing_data_F33E_all_peaks.py
 14. simulation_ResponseSingleTone_Power.py

@@ -30,7 +30,7 @@ else
     python Investigating_lossrates.py
     python model_inputoutput_vs_Iset.py
     python processing_data_F33C_4000_peaks.py
-    python processing_data_F33C_all_peaks
+    python processing_data_F33C_all_peaks.py
     python model_inputoutput_vs_Delta.py
     python processing_data_F33E_all_peaks.py
     python simulation_ResponseSingleTone_Power.py
