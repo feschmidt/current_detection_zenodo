@@ -1,0 +1,44 @@
+### for more settings see the template at https://github.com/matplotlib/matplotlib/blob/master/matplotlibrc.template
+### AXES
+axes.titlesize : 24
+axes.labelsize : 8
+axes.unicode_minus : False # only way to get minus signs displayed when using Arial, from https://stackoverflow.com/questions/30201310/use-of-hyphen-or-minus-sign-in-matplotlib-versus-compatibility-with-latex
+
+### LINES
+lines.linewidth : 2
+lines.markersize : 5
+
+### TICKS
+xtick.top : True
+xtick.direction : in
+xtick.labelsize : 8
+ytick.labelsize : 8
+ytick.right : True
+ytick.direction : in
+
+### FONTS
+font.size : 8
+font.family : sans-serif
+font.sans-serif : Arial
+
+### MATHTEXT
+mathtext.fontset : stixsans
+# this looks much better, but doesn't render the Greek letters?
+# use Arial for math
+#mathtext.fontset : custom
+mathtext.rm : Arial
+#mathtext.bf : Arial:bold
+#mathtext.it : Arial:italic
+#mathtext.tt : stix
+#mathtext.cal : stix:italic
+
+### IMAGES
+image.cmap : YlGn_r
+
+### LATEX
+#text.usetex : True
+#text.latex.preamble : [
+#        r"\usepackage[utf8x]{inputenc}",    # use utf8 fonts 
+#        r"\usepackage[T1]{fontenc}",        # plots will be generated
+#        r"\usepackage[detect-all,locale=DE]{siunitx}",
+#        ]                                   # using this preamble

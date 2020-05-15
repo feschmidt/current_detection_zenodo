@@ -1,0 +1,25 @@
+# Image files
+*.svg.png
+*.svg
+*.png
+*.pdf
+*.gif
+*.pptx
+
+# Directories
+tex/
+figdump/
+*.tar.gz
+
+# ASCII files
+*.dat
+*.meta.txt
+*.csv
+
+# Python files
+mytest.py
+*.ipynb
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pkl

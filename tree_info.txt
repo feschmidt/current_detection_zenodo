@@ -1,0 +1,2699 @@
+.
+├── analysis_classes.py
+├── calibration_gainchain.py
+├── calibration_inputpower.py
+├── CPW_calcs.py
+├── data_final
+│   ├── fig1_panel_c.pkl
+│   ├── fig1_panel_d.pkl
+│   ├── fig1_panel_iv.pkl
+│   ├── fig2_panel_f0fit.pkl
+│   ├── fig2_panel_ftune.pkl
+│   ├── fig2_panel_omstyle.pkl
+│   ├── fig2_panel_spectrum.pkl
+│   ├── fig3_panel_df.pkl
+│   ├── fig3_panel_Is.pkl
+│   ├── fig3_panel_Ppump_1JJ_0000.pkl
+│   ├── fig3_panel_Ppump_1JJ_0100.pkl
+│   ├── fig3_panel_Ppump_1JJ_0200.pkl
+│   ├── fig3_panel_Ppump_1JJ_0300.pkl
+│   ├── fig3_panel_Ppump_1JJ_0400.pkl
+│   ├── fig3_panel_Ppump_1JJ_0500.pkl
+│   ├── fig3_panel_Ppump_1JJ_0600.pkl
+│   ├── fig3_panel_Ppump_1JJ_0700.pkl
+│   ├── fig3_panel_Ppump_1JJ_0800.pkl
+│   ├── fig3_panel_Ppump_1JJ_0900.pkl
+│   ├── fig3_panel_Ppump_1JJ_1000.pkl
+│   ├── fig3_panel_Ppump_1JJ_1100.pkl
+│   ├── fig3_panel_Ppump_1JJ_1200.pkl
+│   ├── fig3_panel_Ppump_1JJ_1300.pkl
+│   ├── fig3_panel_Ppump_1JJ_1400.pkl
+│   ├── fig3_panel_Ppump_1JJ_1500.pkl
+│   ├── fig3_panel_Ppump_1JJ_1600.pkl
+│   ├── fig3_panel_Ppump_1JJ_1700.pkl
+│   ├── fig3_panel_Ppump_1JJ_1800.pkl
+│   ├── fig3_panel_Ppump_1JJ_1900.pkl
+│   ├── fig3_panel_Ppump_1JJ_2000.pkl
+│   ├── fig3_panel_Ppump_1JJ_2100.pkl
+│   ├── fig3_panel_Ppump_1JJ_2200.pkl
+│   ├── fig3_panel_Ppump_1JJ_2300.pkl
+│   ├── fig3_panel_Ppump_1JJ_2400.pkl
+│   ├── fig3_panel_Ppump_1JJ_2500.pkl
+│   ├── fig3_panel_Ppump_1JJ_2600.pkl
+│   ├── fig3_panel_Ppump_1JJ_2700.pkl
+│   ├── fig3_panel_Ppump_1JJ_2800.pkl
+│   ├── fig3_panel_Ppump_1JJ_2900.pkl
+│   ├── fig3_panel_Ppump_1JJ_3000.pkl
+│   ├── fig3_panel_Ppump_1JJ_3100.pkl
+│   ├── fig3_panel_Ppump_1JJ_3200.pkl
+│   ├── fig3_panel_Ppump_1JJ_3300.pkl
+│   ├── fig3_panel_Ppump_1JJ_3400.pkl
+│   ├── fig3_panel_Ppump_1JJ_3500.pkl
+│   ├── fig3_panel_Ppump_1JJ_3600.pkl
+│   ├── fig3_panel_Ppump_1JJ_3700.pkl
+│   ├── fig3_panel_Ppump_1JJ_3800.pkl
+│   ├── fig3_panel_Ppump_1JJ_3900.pkl
+│   ├── fig3_panel_Ppump_1JJ_4000.pkl
+│   ├── fig3_panel_Ppump_1JJ_4100.pkl
+│   ├── fig3_panel_Ppump_1JJ_4200.pkl
+│   ├── fig3_panel_Ppump_1JJ_4300.pkl
+│   ├── fig3_panel_Ppump_1JJ_4400.pkl
+│   ├── fig3_panel_Ppump_1JJ_4500.pkl
+│   ├── fig3_panel_Ppump_1JJ_4600.pkl
+│   ├── fig3_panel_Ppump_1JJ_4700.pkl
+│   ├── fig3_panel_Ppump_1JJ_4800.pkl
+│   ├── fig3_panel_Ppump_1JJ_4900.pkl
+│   ├── fig3_panel_Ppump_1JJ_5000.pkl
+│   ├── fig3_panel_Ppump_1JJ_5100.pkl
+│   ├── fig3_panel_Ppump_1JJ_5200.pkl
+│   ├── fig3_panel_Ppump_1JJ_5300.pkl
+│   ├── fig3_panel_Ppump_1JJ_5400.pkl
+│   ├── fig3_panel_Ppump_1JJ_5500.pkl
+│   ├── fig3_panel_Ppump_1JJ_5600.pkl
+│   ├── fig3_panel_Ppump_1JJ_5700.pkl
+│   ├── fig3_panel_Ppump_1JJ_5800.pkl
+│   ├── fig3_panel_Ppump_1JJ_5900.pkl
+│   ├── fig3_panel_Ppump_1JJ_6000.pkl
+│   ├── fig3_panel_Ppump_1JJ_6100.pkl
+│   ├── fig3_panel_Ppump_1JJ_6200.pkl
+│   ├── fig3_panel_Ppump_1JJ_6300.pkl
+│   ├── fig3_panel_Ppump_1JJ_6400.pkl
+│   ├── fig3_panel_Ppump_1JJ_6500.pkl
+│   ├── fig3_panel_Ppump_1JJ_6600.pkl
+│   ├── fig3_panel_Ppump_1JJ_6700.pkl
+│   ├── fig3_panel_Ppump_1JJ_6800.pkl
+│   ├── fig3_panel_Ppump_1JJ_6900.pkl
+│   ├── fig3_panel_Ppump_1JJ_7000.pkl
+│   ├── fig3_panel_Ppump_1JJ_7100.pkl
+│   ├── fig3_panel_Ppump_1JJ_7200.pkl
+│   ├── fig3_panel_Ppump_1JJ_7300.pkl
+│   ├── fig3_panel_Ppump_1JJ_7400.pkl
+│   ├── fig3_panel_Ppump_1JJ_7500.pkl
+│   ├── fig3_panel_Ppump_1JJ_7600.pkl
+│   ├── fig3_panel_Ppump_1JJ_7700.pkl
+│   ├── fig3_panel_Ppump.pkl
+│   ├── fig4_panel2D_meas.pkl
+│   ├── fig4_panel_a_v2.pkl
+│   ├── fig4_panel_b_v2.pkl
+│   ├── fig4_panel_c_v2.pkl
+│   ├── fig4_panel_d_v2.pkl
+│   ├── fig5_panel_X_measonres.pkl
+│   ├── JJ_CPW_1D_001.0_845.pkl
+│   ├── JJ_CPW_2D_001.0_845.pkl
+│   ├── panel_fig4_exp_data.pkl
+│   ├── panel_fig4_int_data.pkl
+│   ├── SI_spectrum_50Hz.pkl
+│   ├── SM_fig3_panel_df.pkl
+│   ├── SM_fig3_panel_Is.pkl
+│   ├── SM_fig3_panel_Ppump.pkl
+│   ├── SM_freq_shift_ref_full.pkl
+│   ├── SM_freq_shift_ref.pkl
+│   ├── SM_lossrate_expfit.pkl
+│   ├── SM_panel_fig4_current.pkl
+│   ├── SM_panel_fig4_int_m1.pkl
+│   ├── SM_panel_fig4_int_p1.pkl
+│   ├── SM_panel_fig4_power.pkl
+│   ├── SM_S11_50Hz_linecuts.pkl
+│   ├── SM_S11_50Hz.pkl
+│   ├── SM_spectrum_50Hz.pkl
+│   └── SM_spectrum_higher_order.pkl
+├── data_plots
+│   └── pos2
+│       ├── F33_dF_f0+0f1_amplitude.pkl
+│       ├── F33_dF_f0+0f1_frequency.pkl
+│       ├── F33_dF_f0+0f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0+0f1_mtx_frequency.pkl
+│       ├── F33_dF_f0+0f1_mtx.pkl
+│       ├── F33_dF_f0+0f1.pkl
+│       ├── F33_dF_f0-1f1_amplitude.pkl
+│       ├── F33_dF_f0+1f1_amplitude.pkl
+│       ├── F33_dF_f0-1f1_frequency.pkl
+│       ├── F33_dF_f0+1f1_frequency.pkl
+│       ├── F33_dF_f0-1f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0+1f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0-1f1_mtx_frequency.pkl
+│       ├── F33_dF_f0+1f1_mtx_frequency.pkl
+│       ├── F33_dF_f0-1f1_mtx.pkl
+│       ├── F33_dF_f0+1f1_mtx.pkl
+│       ├── F33_dF_f0-1f1.pkl
+│       ├── F33_dF_f0+1f1.pkl
+│       ├── F33_dF_f0-2f1_amplitude.pkl
+│       ├── F33_dF_f0+2f1_amplitude.pkl
+│       ├── F33_dF_f0-2f1_frequency.pkl
+│       ├── F33_dF_f0+2f1_frequency.pkl
+│       ├── F33_dF_f0-2f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0+2f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0-2f1_mtx_frequency.pkl
+│       ├── F33_dF_f0+2f1_mtx_frequency.pkl
+│       ├── F33_dF_f0-2f1_mtx.pkl
+│       ├── F33_dF_f0+2f1_mtx.pkl
+│       ├── F33_dF_f0-2f1.pkl
+│       ├── F33_dF_f0+2f1.pkl
+│       ├── F33_dF_f0-3f1_amplitude.pkl
+│       ├── F33_dF_f0+3f1_amplitude.pkl
+│       ├── F33_dF_f0-3f1_frequency.pkl
+│       ├── F33_dF_f0+3f1_frequency.pkl
+│       ├── F33_dF_f0-3f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0+3f1_mtx_amplitude.pkl
+│       ├── F33_dF_f0-3f1_mtx_frequency.pkl
+│       ├── F33_dF_f0+3f1_mtx_frequency.pkl
+│       ├── F33_dF_f0-3f1_mtx.pkl
+│       ├── F33_dF_f0+3f1_mtx.pkl
+│       ├── F33_dF_f0-3f1.pkl
+│       ├── F33_dF_f0+3f1.pkl
+│       ├── F33_dF__mtx_noisefloor.pkl
+│       ├── F33_dF__noisefloor.pkl
+│       ├── F33_pwr_f0+0f1_amplitude.pkl
+│       ├── F33_pwr_f0+0f1_frequency.pkl
+│       ├── F33_pwr_f0+0f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0+0f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0+0f1_mtx.pkl
+│       ├── F33_pwr_f0+0f1.pkl
+│       ├── F33_pwr_f0-1f1_amplitude.pkl
+│       ├── F33_pwr_f0+1f1_amplitude.pkl
+│       ├── F33_pwr_f0-1f1_frequency.pkl
+│       ├── F33_pwr_f0+1f1_frequency.pkl
+│       ├── F33_pwr_f0-1f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0+1f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0-1f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0+1f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0-1f1_mtx.pkl
+│       ├── F33_pwr_f0+1f1_mtx.pkl
+│       ├── F33_pwr_f0-1f1.pkl
+│       ├── F33_pwr_f0+1f1.pkl
+│       ├── F33_pwr_f0-2f1_amplitude.pkl
+│       ├── F33_pwr_f0+2f1_amplitude.pkl
+│       ├── F33_pwr_f0-2f1_frequency.pkl
+│       ├── F33_pwr_f0+2f1_frequency.pkl
+│       ├── F33_pwr_f0-2f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0+2f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0-2f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0+2f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0-2f1_mtx.pkl
+│       ├── F33_pwr_f0+2f1_mtx.pkl
+│       ├── F33_pwr_f0-2f1.pkl
+│       ├── F33_pwr_f0+2f1.pkl
+│       ├── F33_pwr_f0-3f1_amplitude.pkl
+│       ├── F33_pwr_f0+3f1_amplitude.pkl
+│       ├── F33_pwr_f0-3f1_frequency.pkl
+│       ├── F33_pwr_f0+3f1_frequency.pkl
+│       ├── F33_pwr_f0-3f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0+3f1_mtx_amplitude.pkl
+│       ├── F33_pwr_f0-3f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0+3f1_mtx_frequency.pkl
+│       ├── F33_pwr_f0-3f1_mtx.pkl
+│       ├── F33_pwr_f0+3f1_mtx.pkl
+│       ├── F33_pwr_f0-3f1.pkl
+│       ├── F33_pwr_f0+3f1.pkl
+│       ├── F33_pwr__mtx_noisefloor.pkl
+│       └── F33_pwr__noisefloor.pkl
+├── data_processed
+│   ├── Duffing
+│   │   ├── beta_export.pkl
+│   │   ├── JJarrayCPW_1.0_845_0000.pkl
+│   │   ├── JJarrayCPW_1.0_845_0100.pkl
+│   │   ├── JJarrayCPW_1.0_845_0200.pkl
+│   │   ├── JJarrayCPW_1.0_845_0300.pkl
+│   │   ├── JJarrayCPW_1.0_845_0400.pkl
+│   │   ├── JJarrayCPW_1.0_845_0500.pkl
+│   │   ├── JJarrayCPW_1.0_845_0600.pkl
+│   │   ├── JJarrayCPW_1.0_845_0700.pkl
+│   │   ├── JJarrayCPW_1.0_845_0800.pkl
+│   │   ├── JJarrayCPW_1.0_845_0900.pkl
+│   │   ├── JJarrayCPW_1.0_845_1000.pkl
+│   │   ├── JJarrayCPW_1.0_845_1100.pkl
+│   │   ├── JJarrayCPW_1.0_845_1200.pkl
+│   │   ├── JJarrayCPW_1.0_845_1300.pkl
+│   │   ├── JJarrayCPW_1.0_845_1400.pkl
+│   │   ├── JJarrayCPW_1.0_845_1500.pkl
+│   │   ├── JJarrayCPW_1.0_845_1600.pkl
+│   │   ├── JJarrayCPW_1.0_845_1700.pkl
+│   │   ├── JJarrayCPW_1.0_845_1800.pkl
+│   │   ├── JJarrayCPW_1.0_845_1900.pkl
+│   │   ├── JJarrayCPW_1.0_845_2000.pkl
+│   │   ├── JJarrayCPW_1.0_845_2100.pkl
+│   │   ├── JJarrayCPW_1.0_845_2200.pkl
+│   │   ├── JJarrayCPW_1.0_845_2300.pkl
+│   │   ├── JJarrayCPW_1.0_845_2400.pkl
+│   │   ├── JJarrayCPW_1.0_845_2500.pkl
+│   │   ├── JJarrayCPW_1.0_845_2600.pkl
+│   │   ├── JJarrayCPW_1.0_845_2700.pkl
+│   │   ├── JJarrayCPW_1.0_845_2800.pkl
+│   │   ├── JJarrayCPW_1.0_845_2900.pkl
+│   │   ├── JJarrayCPW_1.0_845_3000.pkl
+│   │   ├── JJarrayCPW_1.0_845_3100.pkl
+│   │   ├── JJarrayCPW_1.0_845_3200.pkl
+│   │   ├── JJarrayCPW_1.0_845_3300.pkl
+│   │   ├── JJarrayCPW_1.0_845_3400.pkl
+│   │   ├── JJarrayCPW_1.0_845_3500.pkl
+│   │   ├── JJarrayCPW_1.0_845_3600.pkl
+│   │   ├── JJarrayCPW_1.0_845_3700.pkl
+│   │   ├── JJarrayCPW_1.0_845_3800.pkl
+│   │   ├── JJarrayCPW_1.0_845_3900.pkl
+│   │   ├── JJarrayCPW_1.0_845_4000.pkl
+│   │   ├── JJarrayCPW_1.0_845_4100.pkl
+│   │   ├── JJarrayCPW_1.0_845_4200.pkl
+│   │   ├── JJarrayCPW_1.0_845_4300.pkl
+│   │   ├── JJarrayCPW_1.0_845_4400.pkl
+│   │   ├── JJarrayCPW_1.0_845_4500.pkl
+│   │   ├── JJarrayCPW_1.0_845_4600.pkl
+│   │   ├── JJarrayCPW_1.0_845_4700.pkl
+│   │   ├── JJarrayCPW_1.0_845_4800.pkl
+│   │   ├── JJarrayCPW_1.0_845_4900.pkl
+│   │   ├── JJarrayCPW_1.0_845_5000.pkl
+│   │   ├── JJarrayCPW_1.0_845_5100.pkl
+│   │   ├── JJarrayCPW_1.0_845_5200.pkl
+│   │   ├── JJarrayCPW_1.0_845_5300.pkl
+│   │   ├── JJarrayCPW_1.0_845_5400.pkl
+│   │   ├── JJarrayCPW_1.0_845_5500.pkl
+│   │   ├── JJarrayCPW_1.0_845_5600.pkl
+│   │   ├── JJarrayCPW_1.0_845_5700.pkl
+│   │   ├── JJarrayCPW_1.0_845_5800.pkl
+│   │   ├── JJarrayCPW_1.0_845_5900.pkl
+│   │   ├── JJarrayCPW_1.0_845_6000.pkl
+│   │   ├── JJarrayCPW_1.0_845_6100.pkl
+│   │   ├── JJarrayCPW_1.0_845_6200.pkl
+│   │   ├── JJarrayCPW_1.0_845_6300.pkl
+│   │   ├── JJarrayCPW_1.0_845_6400.pkl
+│   │   ├── JJarrayCPW_1.0_845_6500.pkl
+│   │   ├── JJarrayCPW_1.0_845_6600.pkl
+│   │   ├── JJarrayCPW_1.0_845_6700.pkl
+│   │   ├── JJarrayCPW_1.0_845_6800.pkl
+│   │   ├── JJarrayCPW_1.0_845_6900.pkl
+│   │   ├── JJarrayCPW_1.0_845_7000.pkl
+│   │   ├── JJarrayCPW_1.0_845_7100.pkl
+│   │   ├── JJarrayCPW_1.0_845_7200.pkl
+│   │   ├── JJarrayCPW_1.0_845_7300.pkl
+│   │   ├── JJarrayCPW_1.0_845_7400.pkl
+│   │   ├── JJarrayCPW_1.0_845_7500.pkl
+│   │   ├── JJarrayCPW_1.0_845_7600.pkl
+│   │   ├── JJarrayCPW_1.0_845_7700.pkl
+│   │   ├── JJarrayCPW_1.0_845_7800.pkl
+│   │   ├── JJarrayCPW_1.0_845_7900.pkl
+│   │   ├── JJarrayCPW_1.0_845_8000.pkl
+│   │   ├── JJarrayCPW_1.0_845_8100.pkl
+│   │   ├── JJarrayCPW_1.0_845_8200.pkl
+│   │   ├── JJarrayCPW_1.0_845_8300.pkl
+│   │   ├── JJarrayCPW_1.0_845_8400.pkl
+│   │   ├── JJarrayCPW_1.0_845_8500.pkl
+│   │   ├── JJarrayCPW_1.0_845_8600.pkl
+│   │   ├── JJarrayCPW_1.0_845_8700.pkl
+│   │   ├── JJarrayCPW_1.0_845_8800.pkl
+│   │   ├── JJarrayCPW_1.0_845_8900.pkl
+│   │   └── JJarrayCPW_1.0_845_9000.pkl
+│   ├── JJarrayCPW_analytical_1umAnh.mtx
+│   ├── JJarrayCPW_analytical_1umAnh.pkl
+│   ├── JJarrayCPW_analytical_1umf0.mtx
+│   ├── JJarrayCPW_analytical_1umf0.pkl
+│   ├── JJarrayCPW_analytical_1um_pars.pkl
+│   ├── pos2
+│   │   ├── F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0.pkl
+│   │   ├── F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100.pkl
+│   │   ├── F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200.pkl
+│   │   ├── F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300.pkl
+│   │   ├── F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400.pkl
+│   │   ├── F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500.pkl
+│   │   ├── F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600.pkl
+│   │   ├── F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700.pkl
+│   │   ├── F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800.pkl
+│   │   ├── F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900.pkl
+│   │   ├── F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000.pkl
+│   │   ├── F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100.pkl
+│   │   ├── F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200.pkl
+│   │   ├── F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299.pkl
+│   │   ├── F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400.pkl
+│   │   ├── F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500.pkl
+│   │   ├── F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600.pkl
+│   │   ├── F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699.pkl
+│   │   ├── F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800.pkl
+│   │   ├── F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900.pkl
+│   │   ├── F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000.pkl
+│   │   ├── F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100.pkl
+│   │   ├── F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200.pkl
+│   │   ├── F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300.pkl
+│   │   ├── F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400.pkl
+│   │   ├── F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500.pkl
+│   │   ├── F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599.pkl
+│   │   ├── F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700.pkl
+│   │   ├── F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800.pkl
+│   │   ├── F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899.pkl
+│   │   ├── F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000.pkl
+│   │   ├── F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100.pkl
+│   │   ├── F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200.pkl
+│   │   ├── F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299.pkl
+│   │   ├── F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399.pkl
+│   │   ├── F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500.pkl
+│   │   ├── F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600.pkl
+│   │   ├── F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699.pkl
+│   │   ├── F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800.pkl
+│   │   ├── F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900.pkl
+│   │   ├── F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000.pkl
+│   │   ├── F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100.pkl
+│   │   ├── F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200.pkl
+│   │   ├── F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299.pkl
+│   │   ├── F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400.pkl
+│   │   ├── F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500.pkl
+│   │   ├── F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600.pkl
+│   │   ├── F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700.pkl
+│   │   ├── F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800.pkl
+│   │   ├── F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900.pkl
+│   │   ├── F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000.pkl
+│   │   ├── F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099.pkl
+│   │   ├── F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199.pkl
+│   │   ├── F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300.pkl
+│   │   ├── F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400.pkl
+│   │   ├── F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500.pkl
+│   │   ├── F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600.pkl
+│   │   ├── F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700.pkl
+│   │   ├── F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799.pkl
+│   │   ├── F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899.pkl
+│   │   ├── F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000.pkl
+│   │   ├── F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100.pkl
+│   │   ├── F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200.pkl
+│   │   ├── F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300.pkl
+│   │   ├── F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400.pkl
+│   │   ├── F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500.pkl
+│   │   ├── F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599.pkl
+│   │   ├── F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699.pkl
+│   │   ├── F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799.pkl
+│   │   ├── F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900.pkl
+│   │   ├── F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000.pkl
+│   │   ├── F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100.pkl
+│   │   ├── F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200.pkl
+│   │   ├── F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300.pkl
+│   │   ├── F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399.pkl
+│   │   ├── F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499.pkl
+│   │   ├── F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600.pkl
+│   │   ├── F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699.pkl
+│   │   ├── F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800.pkl
+│   │   ├── F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899.pkl
+│   │   ├── F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000.pkl
+│   │   ├── F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100.pkl
+│   │   ├── F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200.pkl
+│   │   ├── F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300.pkl
+│   │   ├── F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400.pkl
+│   │   ├── F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500.pkl
+│   │   ├── F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0.pkl
+│   │   ├── F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100.pkl
+│   │   ├── F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200.pkl
+│   │   ├── F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300.pkl
+│   │   ├── F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400.pkl
+│   │   ├── F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500.pkl
+│   │   ├── F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600.pkl
+│   │   ├── F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700.pkl
+│   │   ├── F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800.pkl
+│   │   ├── F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900.pkl
+│   │   ├── F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.pkl
+│   │   ├── F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.pkl
+│   │   ├── F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.pkl
+│   │   ├── F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.pkl
+│   │   ├── F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.pkl
+│   │   ├── F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.pkl
+│   │   ├── F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.pkl
+│   │   ├── F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.pkl
+│   │   ├── F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.pkl
+│   │   ├── F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.pkl
+│   │   ├── F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.pkl
+│   │   ├── F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.pkl
+│   │   ├── F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.pkl
+│   │   ├── F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.pkl
+│   │   ├── F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.pkl
+│   │   ├── F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.pkl
+│   │   ├── F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.pkl
+│   │   ├── F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.pkl
+│   │   ├── F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.pkl
+│   │   ├── F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.pkl
+│   │   ├── F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.pkl
+│   │   ├── F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.pkl
+│   │   ├── F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.pkl
+│   │   ├── F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.pkl
+│   │   ├── F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.pkl
+│   │   ├── F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.pkl
+│   │   ├── F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.pkl
+│   │   ├── F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.pkl
+│   │   ├── F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.pkl
+│   │   ├── F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.pkl
+│   │   ├── F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.pkl
+│   │   ├── F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.pkl
+│   │   ├── F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.pkl
+│   │   ├── F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.pkl
+│   │   ├── F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.pkl
+│   │   ├── F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.pkl
+│   │   ├── F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.pkl
+│   │   ├── F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.pkl
+│   │   ├── F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.pkl
+│   │   ├── F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.pkl
+│   │   ├── F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.pkl
+│   │   ├── F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.pkl
+│   │   ├── F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.pkl
+│   │   ├── F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.pkl
+│   │   ├── F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.pkl
+│   │   ├── F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.pkl
+│   │   ├── F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.pkl
+│   │   ├── F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.pkl
+│   │   ├── F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.pkl
+│   │   ├── F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.pkl
+│   │   ├── F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.pkl
+│   │   ├── F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.pkl
+│   │   ├── F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.pkl
+│   │   ├── F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.pkl
+│   │   ├── F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.pkl
+│   │   ├── F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.pkl
+│   │   ├── F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.pkl
+│   │   ├── F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.pkl
+│   │   ├── F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.pkl
+│   │   ├── F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.pkl
+│   │   ├── F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.pkl
+│   │   ├── F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.pkl
+│   │   ├── F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.pkl
+│   │   ├── F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.pkl
+│   │   ├── F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.pkl
+│   │   ├── F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.pkl
+│   │   ├── F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.pkl
+│   │   ├── F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.pkl
+│   │   ├── F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.pkl
+│   │   ├── F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.pkl
+│   │   ├── F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.pkl
+│   │   ├── F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.pkl
+│   │   ├── F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.pkl
+│   │   ├── F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.pkl
+│   │   └── F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.pkl
+│   └── sensitivity_estimation
+│       ├── data_F33B_peaks.pkl
+│       ├── data_F33C_0_peaks.pkl
+│       ├── data_F33C_1000_peaks.pkl
+│       ├── data_F33C_2000_peaks.pkl
+│       ├── data_F33C_3000_peaks.pkl
+│       ├── data_F33C_4000_peaks.pkl
+│       ├── data_F33C_5000_peaks.pkl
+│       ├── data_F33C_500_peaks.pkl
+│       ├── data_F33C_6000_peaks.pkl
+│       ├── data_F33C_6500_peaks.pkl
+│       ├── data_F33C_6600_peaks.pkl
+│       ├── data_F33C_6700_peaks.pkl
+│       ├── data_F33C_6800_peaks.pkl
+│       ├── data_F33C_6900_peaks.pkl
+│       ├── data_F33C_7000_peaks.pkl
+│       ├── data_F33C_7100_peaks.pkl
+│       ├── data_F33C_7200_peaks.pkl
+│       ├── data_F33C_7300_peaks.pkl
+│       ├── data_F33E_0_peaks.pkl
+│       ├── data_F33E_1000_peaks.pkl
+│       ├── data_F33E_1500_peaks.pkl
+│       ├── data_F33E_2000_peaks.pkl
+│       ├── data_F33E_2500_peaks.pkl
+│       ├── data_F33E_3000_peaks.pkl
+│       ├── data_F33E_3500_peaks.pkl
+│       ├── data_F33E_4000_peaks.pkl
+│       ├── data_F33E_4500_peaks.pkl
+│       ├── data_F33E_5000_peaks.pkl
+│       ├── data_F33E_500_peaks.pkl
+│       ├── data_F33E_5500_peaks.pkl
+│       ├── data_F33E_6000_peaks.pkl
+│       ├── data_F33E_6500_peaks.pkl
+│       ├── data_F33E_6600_peaks.pkl
+│       ├── data_F33E_6700_peaks.pkl
+│       ├── data_F33E_6800_peaks.pkl
+│       ├── data_F33E_6900_peaks.pkl
+│       ├── data_F33E_7000_peaks.pkl
+│       ├── data_F33E_7100_peaks.pkl
+│       ├── data_F33E_7200_peaks.pkl
+│       ├── data_F33E_7300_peaks.pkl
+│       ├── data_F33E_7500_peaks.pkl
+│       ├── data_F33E_7700_peaks.pkl
+│       ├── fitpars_derivatives_vs_Is_F30_fulldata.pkl
+│       ├── fitpars_derivatives_vs_Is_F30.pkl
+│       ├── fitpars_vs_Is.pkl
+│       ├── gaindata.pkl
+│       ├── lossrate_expfit.pkl
+│       ├── popt_f0_vs_Iset.pkl
+│       ├── popt_simulation_JJarrays.pkl
+│       ├── power_in.pkl
+│       ├── S11res_vs_Is.pkl
+│       └── S11_vs_Is.pkl
+├── data_raw
+│   ├── F13_2019_03_06_20.42.07_VNA_vs_current_RF_IV
+│   │   ├── F13_2019_03_06_20.42.07_VNA_vs_current_RF_IV.dat
+│   │   ├── F13_2019_03_06_20.42.07_VNA_vs_current_RF_IV.meta.txt
+│   │   ├── F13_2019_03_06_20.42.07_VNA_vs_current_RF_IV.png
+│   │   └── VNA_vs_current.py
+│   ├── F14_2019_01_17_12.19.14_single_IV_pos2_batteries
+│   │   ├── F14_2019_01_17_12.19.14_single_IV_pos4_batteries.dat
+│   │   ├── F14_2019_01_17_12.19.14_single_IV_pos4_batteries.meta.txt
+│   │   └── multiple_IVs.py
+│   ├── F30_50Hz_noise_debugging
+│   │   └── F30_2019_03_22_14.09.44_VNA_vs_current_10uAalloffcleanracks
+│   │       ├── F30_2019_03_22_14.09.44_VNA_vs_current_10uAalloffcleanracks.dat
+│   │       ├── F30_2019_03_22_14.09.44_VNA_vs_current_10uAalloffcleanracks.png
+│   │       └── VNA_vs_current.py
+│   ├── F32_megameasurement3
+│   │   ├── _cal_F1_2019_02_28_09.56.05_VNA_vs_power_atten_dircoup_VNA_7to8GHz.dat
+│   │   ├── _cal_F1_2019_02_28_10.25.28_VNA_vs_power_dircoupthrough_VNA_7to8GHz.dat
+│   │   ├── _cal_power.py
+│   │   ├── F33A_2019_05_10_22.57.31_VNA_vs_Is_0to10uA_200mVpp
+│   │   │   ├── F33A_2019_05_10_22.57.31_VNA_vs_Is_0to10uA_200mVpp.dat
+│   │   │   ├── F33A_2019_05_10_22.57.31_VNA_vs_Is_0to10uA_200mVpp.dat.gitids.txt
+│   │   │   ├── F33A_2019_05_10_22.57.31_VNA_vs_Is_0to10uA_200mVpp.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33B_2019_05_10_22.57.31_SA_vs_Is_0to10uA_200mVpp
+│   │   │   ├── F33B_2019_05_10_22.57.31_SA_vs_Is_0to10uA_200mVpp.dat
+│   │   │   ├── F33B_2019_05_10_22.57.31_SA_vs_Is_0to10uA_200mVpp.dat.gitids.txt
+│   │   │   ├── F33B_2019_05_10_22.57.31_SA_vs_Is_0to10uA_200mVpp.meta.txt
+│   │   │   ├── F33B_2019_05_10_22.57.31_SA_vs_Is_0to10uA_200mVpp.mtx
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0
+│   │   │   ├── F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0.dat
+│   │   │   ├── F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100
+│   │   │   ├── F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100.dat
+│   │   │   ├── F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200
+│   │   │   ├── F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200.dat
+│   │   │   ├── F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300
+│   │   │   ├── F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300.dat
+│   │   │   ├── F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400
+│   │   │   ├── F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400.dat
+│   │   │   ├── F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500
+│   │   │   ├── F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500.dat
+│   │   │   ├── F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600
+│   │   │   ├── F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600.dat
+│   │   │   ├── F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700
+│   │   │   ├── F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700.dat
+│   │   │   ├── F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800
+│   │   │   ├── F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800.dat
+│   │   │   ├── F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900
+│   │   │   ├── F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900.dat
+│   │   │   ├── F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000
+│   │   │   ├── F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000.dat
+│   │   │   ├── F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100
+│   │   │   ├── F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100.dat
+│   │   │   ├── F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200
+│   │   │   ├── F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200.dat
+│   │   │   ├── F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299
+│   │   │   ├── F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299.dat
+│   │   │   ├── F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400
+│   │   │   ├── F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400.dat
+│   │   │   ├── F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500
+│   │   │   ├── F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500.dat
+│   │   │   ├── F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600
+│   │   │   ├── F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600.dat
+│   │   │   ├── F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699
+│   │   │   ├── F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699.dat
+│   │   │   ├── F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800
+│   │   │   ├── F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800.dat
+│   │   │   ├── F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900
+│   │   │   ├── F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900.dat
+│   │   │   ├── F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000
+│   │   │   ├── F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000.dat
+│   │   │   ├── F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100
+│   │   │   ├── F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100.dat
+│   │   │   ├── F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200
+│   │   │   ├── F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200.dat
+│   │   │   ├── F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300
+│   │   │   ├── F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300.dat
+│   │   │   ├── F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400
+│   │   │   ├── F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400.dat
+│   │   │   ├── F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500
+│   │   │   ├── F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500.dat
+│   │   │   ├── F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599
+│   │   │   ├── F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599.dat
+│   │   │   ├── F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700
+│   │   │   ├── F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700.dat
+│   │   │   ├── F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800
+│   │   │   ├── F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800.dat
+│   │   │   ├── F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899
+│   │   │   ├── F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899.dat
+│   │   │   ├── F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000
+│   │   │   ├── F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000.dat
+│   │   │   ├── F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100
+│   │   │   ├── F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100.dat
+│   │   │   ├── F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200
+│   │   │   ├── F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200.dat
+│   │   │   ├── F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299
+│   │   │   ├── F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299.dat
+│   │   │   ├── F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399
+│   │   │   ├── F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399.dat
+│   │   │   ├── F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500
+│   │   │   ├── F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500.dat
+│   │   │   ├── F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600
+│   │   │   ├── F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600.dat
+│   │   │   ├── F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699
+│   │   │   ├── F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699.dat
+│   │   │   ├── F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800
+│   │   │   ├── F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800.dat
+│   │   │   ├── F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900
+│   │   │   ├── F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900.dat
+│   │   │   ├── F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000
+│   │   │   ├── F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000.dat
+│   │   │   ├── F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100
+│   │   │   ├── F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100.dat
+│   │   │   ├── F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200
+│   │   │   ├── F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200.dat
+│   │   │   ├── F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299
+│   │   │   ├── F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299.dat
+│   │   │   ├── F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400
+│   │   │   ├── F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400.dat
+│   │   │   ├── F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500
+│   │   │   ├── F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500.dat
+│   │   │   ├── F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600
+│   │   │   ├── F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600.dat
+│   │   │   ├── F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700
+│   │   │   ├── F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700.dat
+│   │   │   ├── F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800
+│   │   │   ├── F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800.dat
+│   │   │   ├── F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900
+│   │   │   ├── F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900.dat
+│   │   │   ├── F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000
+│   │   │   ├── F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000.dat
+│   │   │   ├── F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099
+│   │   │   ├── F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099.dat
+│   │   │   ├── F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199
+│   │   │   ├── F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199.dat
+│   │   │   ├── F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300
+│   │   │   ├── F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300.dat
+│   │   │   ├── F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400
+│   │   │   ├── F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400.dat
+│   │   │   ├── F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500
+│   │   │   ├── F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500.dat
+│   │   │   ├── F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600
+│   │   │   ├── F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600.dat
+│   │   │   ├── F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700
+│   │   │   ├── F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700.dat
+│   │   │   ├── F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799
+│   │   │   ├── F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799.dat
+│   │   │   ├── F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899
+│   │   │   ├── F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899.dat
+│   │   │   ├── F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000
+│   │   │   ├── F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000.dat
+│   │   │   ├── F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100
+│   │   │   ├── F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100.dat
+│   │   │   ├── F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200
+│   │   │   ├── F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200.dat
+│   │   │   ├── F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300
+│   │   │   ├── F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300.dat
+│   │   │   ├── F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400
+│   │   │   ├── F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400.dat
+│   │   │   ├── F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500
+│   │   │   ├── F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500.dat
+│   │   │   ├── F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599
+│   │   │   ├── F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599.dat
+│   │   │   ├── F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699
+│   │   │   ├── F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699.dat
+│   │   │   ├── F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799
+│   │   │   ├── F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799.dat
+│   │   │   ├── F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900
+│   │   │   ├── F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900.dat
+│   │   │   ├── F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000
+│   │   │   ├── F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000.dat
+│   │   │   ├── F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100
+│   │   │   ├── F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100.dat
+│   │   │   ├── F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200
+│   │   │   ├── F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200.dat
+│   │   │   ├── F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300
+│   │   │   ├── F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300.dat
+│   │   │   ├── F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399
+│   │   │   ├── F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399.dat
+│   │   │   ├── F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499
+│   │   │   ├── F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499.dat
+│   │   │   ├── F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600
+│   │   │   ├── F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600.dat
+│   │   │   ├── F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699
+│   │   │   ├── F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699.dat
+│   │   │   ├── F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800
+│   │   │   ├── F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800.dat
+│   │   │   ├── F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899
+│   │   │   ├── F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899.dat
+│   │   │   ├── F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000
+│   │   │   ├── F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000.dat
+│   │   │   ├── F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100
+│   │   │   ├── F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100.dat
+│   │   │   ├── F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200
+│   │   │   ├── F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200.dat
+│   │   │   ├── F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300
+│   │   │   ├── F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300.dat
+│   │   │   ├── F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400
+│   │   │   ├── F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400.dat
+│   │   │   ├── F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500
+│   │   │   ├── F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500.dat
+│   │   │   ├── F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500.dat.gitids.txt
+│   │   │   ├── F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_10_23.13.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_0
+│   │   │   ├── F33D_2019_05_10_23.13.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_0.dat
+│   │   │   ├── F33D_2019_05_10_23.13.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_0.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_10_23.13.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_0.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_10_23.39.32_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_100
+│   │   │   ├── F33D_2019_05_10_23.39.32_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_100.dat
+│   │   │   ├── F33D_2019_05_10_23.39.32_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_10_23.39.32_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_00.20.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_200
+│   │   │   ├── F33D_2019_05_11_00.20.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_200.dat
+│   │   │   ├── F33D_2019_05_11_00.20.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_00.20.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_01.01.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_300
+│   │   │   ├── F33D_2019_05_11_01.01.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_300.dat
+│   │   │   ├── F33D_2019_05_11_01.01.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_01.01.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_01.42.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_400
+│   │   │   ├── F33D_2019_05_11_01.42.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_400.dat
+│   │   │   ├── F33D_2019_05_11_01.42.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_01.42.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_02.24.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_500
+│   │   │   ├── F33D_2019_05_11_02.24.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_500.dat
+│   │   │   ├── F33D_2019_05_11_02.24.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_02.24.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_03.05.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_600
+│   │   │   ├── F33D_2019_05_11_03.05.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_600.dat
+│   │   │   ├── F33D_2019_05_11_03.05.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_03.05.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_03.45.56_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_700
+│   │   │   ├── F33D_2019_05_11_03.45.56_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_700.dat
+│   │   │   ├── F33D_2019_05_11_03.45.56_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_700.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_03.45.56_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_04.26.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_800
+│   │   │   ├── F33D_2019_05_11_04.26.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_800.dat
+│   │   │   ├── F33D_2019_05_11_04.26.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_04.26.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_05.07.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_900
+│   │   │   ├── F33D_2019_05_11_05.07.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_900.dat
+│   │   │   ├── F33D_2019_05_11_05.07.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_900.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_05.07.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_05.48.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1000
+│   │   │   ├── F33D_2019_05_11_05.48.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.dat
+│   │   │   ├── F33D_2019_05_11_05.48.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_05.48.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_06.29.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1100
+│   │   │   ├── F33D_2019_05_11_06.29.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.dat
+│   │   │   ├── F33D_2019_05_11_06.29.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_06.29.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_07.10.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1200
+│   │   │   ├── F33D_2019_05_11_07.10.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.dat
+│   │   │   ├── F33D_2019_05_11_07.10.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_07.10.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_07.51.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1299
+│   │   │   ├── F33D_2019_05_11_07.51.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.dat
+│   │   │   ├── F33D_2019_05_11_07.51.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_07.51.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_08.32.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1400
+│   │   │   ├── F33D_2019_05_11_08.32.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.dat
+│   │   │   ├── F33D_2019_05_11_08.32.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_08.32.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_09.13.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1500
+│   │   │   ├── F33D_2019_05_11_09.13.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.dat
+│   │   │   ├── F33D_2019_05_11_09.13.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_09.13.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_09.54.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1600
+│   │   │   ├── F33D_2019_05_11_09.54.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.dat
+│   │   │   ├── F33D_2019_05_11_09.54.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_09.54.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_10.35.02_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1699
+│   │   │   ├── F33D_2019_05_11_10.35.02_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.dat
+│   │   │   ├── F33D_2019_05_11_10.35.02_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_10.35.02_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_11.15.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1800
+│   │   │   ├── F33D_2019_05_11_11.15.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.dat
+│   │   │   ├── F33D_2019_05_11_11.15.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_11.15.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_11.56.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1900
+│   │   │   ├── F33D_2019_05_11_11.56.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.dat
+│   │   │   ├── F33D_2019_05_11_11.56.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_11.56.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_12.37.47_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2000
+│   │   │   ├── F33D_2019_05_11_12.37.47_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.dat
+│   │   │   ├── F33D_2019_05_11_12.37.47_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_12.37.47_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_13.18.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2100
+│   │   │   ├── F33D_2019_05_11_13.18.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.dat
+│   │   │   ├── F33D_2019_05_11_13.18.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_13.18.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_13.59.37_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2200
+│   │   │   ├── F33D_2019_05_11_13.59.37_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.dat
+│   │   │   ├── F33D_2019_05_11_13.59.37_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_13.59.37_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_14.40.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2300
+│   │   │   ├── F33D_2019_05_11_14.40.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.dat
+│   │   │   ├── F33D_2019_05_11_14.40.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_14.40.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_15.21.29_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2400
+│   │   │   ├── F33D_2019_05_11_15.21.29_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.dat
+│   │   │   ├── F33D_2019_05_11_15.21.29_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_15.21.29_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_16.02.24_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2500
+│   │   │   ├── F33D_2019_05_11_16.02.24_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.dat
+│   │   │   ├── F33D_2019_05_11_16.02.24_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_16.02.24_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_16.43.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2599
+│   │   │   ├── F33D_2019_05_11_16.43.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.dat
+│   │   │   ├── F33D_2019_05_11_16.43.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_16.43.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_17.24.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2700
+│   │   │   ├── F33D_2019_05_11_17.24.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.dat
+│   │   │   ├── F33D_2019_05_11_17.24.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_17.24.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_18.05.09_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2800
+│   │   │   ├── F33D_2019_05_11_18.05.09_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.dat
+│   │   │   ├── F33D_2019_05_11_18.05.09_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_18.05.09_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_18.46.04_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2899
+│   │   │   ├── F33D_2019_05_11_18.46.04_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.dat
+│   │   │   ├── F33D_2019_05_11_18.46.04_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_18.46.04_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_19.26.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3000
+│   │   │   ├── F33D_2019_05_11_19.26.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.dat
+│   │   │   ├── F33D_2019_05_11_19.26.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_19.26.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_20.07.54_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3100
+│   │   │   ├── F33D_2019_05_11_20.07.54_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.dat
+│   │   │   ├── F33D_2019_05_11_20.07.54_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_20.07.54_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_20.48.49_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3200
+│   │   │   ├── F33D_2019_05_11_20.48.49_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.dat
+│   │   │   ├── F33D_2019_05_11_20.48.49_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_20.48.49_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_21.29.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3299
+│   │   │   ├── F33D_2019_05_11_21.29.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.dat
+│   │   │   ├── F33D_2019_05_11_21.29.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_21.29.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_22.10.39_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3399
+│   │   │   ├── F33D_2019_05_11_22.10.39_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.dat
+│   │   │   ├── F33D_2019_05_11_22.10.39_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_22.10.39_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_22.51.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3500
+│   │   │   ├── F33D_2019_05_11_22.51.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.dat
+│   │   │   ├── F33D_2019_05_11_22.51.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_22.51.34_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_11_23.32.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3600
+│   │   │   ├── F33D_2019_05_11_23.32.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.dat
+│   │   │   ├── F33D_2019_05_11_23.32.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_11_23.32.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_00.13.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3699
+│   │   │   ├── F33D_2019_05_12_00.13.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.dat
+│   │   │   ├── F33D_2019_05_12_00.13.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_00.13.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_00.54.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3800
+│   │   │   ├── F33D_2019_05_12_00.54.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.dat
+│   │   │   ├── F33D_2019_05_12_00.54.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_00.54.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_01.35.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3900
+│   │   │   ├── F33D_2019_05_12_01.35.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.dat
+│   │   │   ├── F33D_2019_05_12_01.35.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_01.35.13_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_02.16.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4000
+│   │   │   ├── F33D_2019_05_12_02.16.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.dat
+│   │   │   ├── F33D_2019_05_12_02.16.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_02.16.08_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_02.57.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4100
+│   │   │   ├── F33D_2019_05_12_02.57.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.dat
+│   │   │   ├── F33D_2019_05_12_02.57.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_02.57.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_03.37.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4200
+│   │   │   ├── F33D_2019_05_12_03.37.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.dat
+│   │   │   ├── F33D_2019_05_12_03.37.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_03.37.58_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_04.18.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4299
+│   │   │   ├── F33D_2019_05_12_04.18.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.dat
+│   │   │   ├── F33D_2019_05_12_04.18.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_04.18.52_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_04.59.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4400
+│   │   │   ├── F33D_2019_05_12_04.59.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.dat
+│   │   │   ├── F33D_2019_05_12_04.59.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_04.59.46_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_05.40.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4500
+│   │   │   ├── F33D_2019_05_12_05.40.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.dat
+│   │   │   ├── F33D_2019_05_12_05.40.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_05.40.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_06.21.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4600
+│   │   │   ├── F33D_2019_05_12_06.21.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.dat
+│   │   │   ├── F33D_2019_05_12_06.21.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_06.21.35_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_07.02.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4700
+│   │   │   ├── F33D_2019_05_12_07.02.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.dat
+│   │   │   ├── F33D_2019_05_12_07.02.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_07.02.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_07.43.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4800
+│   │   │   ├── F33D_2019_05_12_07.43.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.dat
+│   │   │   ├── F33D_2019_05_12_07.43.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_07.43.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_08.24.20_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4900
+│   │   │   ├── F33D_2019_05_12_08.24.20_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.dat
+│   │   │   ├── F33D_2019_05_12_08.24.20_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_08.24.20_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_09.05.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5000
+│   │   │   ├── F33D_2019_05_12_09.05.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.dat
+│   │   │   ├── F33D_2019_05_12_09.05.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_09.05.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_09.46.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5099
+│   │   │   ├── F33D_2019_05_12_09.46.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.dat
+│   │   │   ├── F33D_2019_05_12_09.46.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_09.46.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_10.27.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5199
+│   │   │   ├── F33D_2019_05_12_10.27.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.dat
+│   │   │   ├── F33D_2019_05_12_10.27.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_10.27.06_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_11.08.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5300
+│   │   │   ├── F33D_2019_05_12_11.08.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.dat
+│   │   │   ├── F33D_2019_05_12_11.08.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_11.08.03_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_11.49.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5400
+│   │   │   ├── F33D_2019_05_12_11.49.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.dat
+│   │   │   ├── F33D_2019_05_12_11.49.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_11.49.01_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_12.29.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5500
+│   │   │   ├── F33D_2019_05_12_12.29.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.dat
+│   │   │   ├── F33D_2019_05_12_12.29.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_12.29.59_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_13.10.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5600
+│   │   │   ├── F33D_2019_05_12_13.10.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.dat
+│   │   │   ├── F33D_2019_05_12_13.10.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_13.10.57_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_13.51.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5700
+│   │   │   ├── F33D_2019_05_12_13.51.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.dat
+│   │   │   ├── F33D_2019_05_12_13.51.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_13.51.53_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_14.32.50_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5799
+│   │   │   ├── F33D_2019_05_12_14.32.50_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.dat
+│   │   │   ├── F33D_2019_05_12_14.32.50_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_14.32.50_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_15.13.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5899
+│   │   │   ├── F33D_2019_05_12_15.13.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.dat
+│   │   │   ├── F33D_2019_05_12_15.13.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_15.13.48_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_15.54.45_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6000
+│   │   │   ├── F33D_2019_05_12_15.54.45_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.dat
+│   │   │   ├── F33D_2019_05_12_15.54.45_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_15.54.45_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_16.35.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6100
+│   │   │   ├── F33D_2019_05_12_16.35.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.dat
+│   │   │   ├── F33D_2019_05_12_16.35.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_16.35.44_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_17.16.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6200
+│   │   │   ├── F33D_2019_05_12_17.16.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.dat
+│   │   │   ├── F33D_2019_05_12_17.16.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_17.16.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_17.57.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6300
+│   │   │   ├── F33D_2019_05_12_17.57.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.dat
+│   │   │   ├── F33D_2019_05_12_17.57.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_17.57.43_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_18.38.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6400
+│   │   │   ├── F33D_2019_05_12_18.38.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.dat
+│   │   │   ├── F33D_2019_05_12_18.38.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_18.38.41_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_19.19.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6500
+│   │   │   ├── F33D_2019_05_12_19.19.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.dat
+│   │   │   ├── F33D_2019_05_12_19.19.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_19.19.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_20.00.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6599
+│   │   │   ├── F33D_2019_05_12_20.00.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.dat
+│   │   │   ├── F33D_2019_05_12_20.00.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_20.00.40_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_20.41.36_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6699
+│   │   │   ├── F33D_2019_05_12_20.41.36_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.dat
+│   │   │   ├── F33D_2019_05_12_20.41.36_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_20.41.36_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_21.22.33_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6799
+│   │   │   ├── F33D_2019_05_12_21.22.33_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.dat
+│   │   │   ├── F33D_2019_05_12_21.22.33_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_21.22.33_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_22.03.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6900
+│   │   │   ├── F33D_2019_05_12_22.03.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.dat
+│   │   │   ├── F33D_2019_05_12_22.03.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_22.03.30_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_22.44.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7000
+│   │   │   ├── F33D_2019_05_12_22.44.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.dat
+│   │   │   ├── F33D_2019_05_12_22.44.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_22.44.28_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_12_23.25.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7100
+│   │   │   ├── F33D_2019_05_12_23.25.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.dat
+│   │   │   ├── F33D_2019_05_12_23.25.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_12_23.25.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_00.06.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7200
+│   │   │   ├── F33D_2019_05_13_00.06.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.dat
+│   │   │   ├── F33D_2019_05_13_00.06.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_00.06.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_00.47.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7300
+│   │   │   ├── F33D_2019_05_13_00.47.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.dat
+│   │   │   ├── F33D_2019_05_13_00.47.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_00.47.23_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_01.28.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7399
+│   │   │   ├── F33D_2019_05_13_01.28.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.dat
+│   │   │   ├── F33D_2019_05_13_01.28.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_01.28.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_02.11.26_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7499
+│   │   │   ├── F33D_2019_05_13_02.11.26_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.dat
+│   │   │   ├── F33D_2019_05_13_02.11.26_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_02.11.26_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_02.52.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7600
+│   │   │   ├── F33D_2019_05_13_02.52.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.dat
+│   │   │   ├── F33D_2019_05_13_02.52.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_02.52.25_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_03.33.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7699
+│   │   │   ├── F33D_2019_05_13_03.33.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.dat
+│   │   │   ├── F33D_2019_05_13_03.33.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_03.33.21_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_04.14.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7800
+│   │   │   ├── F33D_2019_05_13_04.14.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.dat
+│   │   │   ├── F33D_2019_05_13_04.14.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_04.14.19_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_04.55.17_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7899
+│   │   │   ├── F33D_2019_05_13_04.55.17_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.dat
+│   │   │   ├── F33D_2019_05_13_04.55.17_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_04.55.17_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_05.36.16_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8000
+│   │   │   ├── F33D_2019_05_13_05.36.16_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.dat
+│   │   │   ├── F33D_2019_05_13_05.36.16_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_05.36.16_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_06.17.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8100
+│   │   │   ├── F33D_2019_05_13_06.17.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.dat
+│   │   │   ├── F33D_2019_05_13_06.17.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_06.17.15_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_06.58.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8200
+│   │   │   ├── F33D_2019_05_13_06.58.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.dat
+│   │   │   ├── F33D_2019_05_13_06.58.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_06.58.14_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_07.39.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8300
+│   │   │   ├── F33D_2019_05_13_07.39.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.dat
+│   │   │   ├── F33D_2019_05_13_07.39.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_07.39.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33D_2019_05_13_08.20.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8400
+│   │   │   ├── F33D_2019_05_13_08.20.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.dat
+│   │   │   ├── F33D_2019_05_13_08.20.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.dat.gitids.txt
+│   │   │   ├── F33D_2019_05_13_08.20.11_VNA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0
+│   │   │   ├── F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0.dat
+│   │   │   ├── F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100
+│   │   │   ├── F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100.dat
+│   │   │   ├── F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200
+│   │   │   ├── F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200.dat
+│   │   │   ├── F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300
+│   │   │   ├── F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300.dat
+│   │   │   ├── F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400
+│   │   │   ├── F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400.dat
+│   │   │   ├── F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500
+│   │   │   ├── F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500.dat
+│   │   │   ├── F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600
+│   │   │   ├── F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600.dat
+│   │   │   ├── F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700
+│   │   │   ├── F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700.dat
+│   │   │   ├── F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800
+│   │   │   ├── F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800.dat
+│   │   │   ├── F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900
+│   │   │   ├── F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900.dat
+│   │   │   ├── F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000
+│   │   │   ├── F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.dat
+│   │   │   ├── F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100
+│   │   │   ├── F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.dat
+│   │   │   ├── F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200
+│   │   │   ├── F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.dat
+│   │   │   ├── F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299
+│   │   │   ├── F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.dat
+│   │   │   ├── F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400
+│   │   │   ├── F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.dat
+│   │   │   ├── F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500
+│   │   │   ├── F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.dat
+│   │   │   ├── F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600
+│   │   │   ├── F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.dat
+│   │   │   ├── F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699
+│   │   │   ├── F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.dat
+│   │   │   ├── F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800
+│   │   │   ├── F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.dat
+│   │   │   ├── F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900
+│   │   │   ├── F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.dat
+│   │   │   ├── F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000
+│   │   │   ├── F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.dat
+│   │   │   ├── F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100
+│   │   │   ├── F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.dat
+│   │   │   ├── F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200
+│   │   │   ├── F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.dat
+│   │   │   ├── F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300
+│   │   │   ├── F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.dat
+│   │   │   ├── F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400
+│   │   │   ├── F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.dat
+│   │   │   ├── F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500
+│   │   │   ├── F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.dat
+│   │   │   ├── F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599
+│   │   │   ├── F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.dat
+│   │   │   ├── F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700
+│   │   │   ├── F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.dat
+│   │   │   ├── F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800
+│   │   │   ├── F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.dat
+│   │   │   ├── F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899
+│   │   │   ├── F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.dat
+│   │   │   ├── F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000
+│   │   │   ├── F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.dat
+│   │   │   ├── F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100
+│   │   │   ├── F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.dat
+│   │   │   ├── F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200
+│   │   │   ├── F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.dat
+│   │   │   ├── F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299
+│   │   │   ├── F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.dat
+│   │   │   ├── F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399
+│   │   │   ├── F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.dat
+│   │   │   ├── F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500
+│   │   │   ├── F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.dat
+│   │   │   ├── F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600
+│   │   │   ├── F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.dat
+│   │   │   ├── F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699
+│   │   │   ├── F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.dat
+│   │   │   ├── F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800
+│   │   │   ├── F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.dat
+│   │   │   ├── F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900
+│   │   │   ├── F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.dat
+│   │   │   ├── F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000
+│   │   │   ├── F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.dat
+│   │   │   ├── F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100
+│   │   │   ├── F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.dat
+│   │   │   ├── F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200
+│   │   │   ├── F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.dat
+│   │   │   ├── F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299
+│   │   │   ├── F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.dat
+│   │   │   ├── F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400
+│   │   │   ├── F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.dat
+│   │   │   ├── F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500
+│   │   │   ├── F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.dat
+│   │   │   ├── F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600
+│   │   │   ├── F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.dat
+│   │   │   ├── F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700
+│   │   │   ├── F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.dat
+│   │   │   ├── F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800
+│   │   │   ├── F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.dat
+│   │   │   ├── F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900
+│   │   │   ├── F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.dat
+│   │   │   ├── F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000
+│   │   │   ├── F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.dat
+│   │   │   ├── F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099
+│   │   │   ├── F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.dat
+│   │   │   ├── F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199
+│   │   │   ├── F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.dat
+│   │   │   ├── F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300
+│   │   │   ├── F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.dat
+│   │   │   ├── F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400
+│   │   │   ├── F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.dat
+│   │   │   ├── F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500
+│   │   │   ├── F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.dat
+│   │   │   ├── F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600
+│   │   │   ├── F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.dat
+│   │   │   ├── F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700
+│   │   │   ├── F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.dat
+│   │   │   ├── F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799
+│   │   │   ├── F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.dat
+│   │   │   ├── F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899
+│   │   │   ├── F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.dat
+│   │   │   ├── F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000
+│   │   │   ├── F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.dat
+│   │   │   ├── F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100
+│   │   │   ├── F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.dat
+│   │   │   ├── F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200
+│   │   │   ├── F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.dat
+│   │   │   ├── F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300
+│   │   │   ├── F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.dat
+│   │   │   ├── F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400
+│   │   │   ├── F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.dat
+│   │   │   ├── F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500
+│   │   │   ├── F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.dat
+│   │   │   ├── F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599
+│   │   │   ├── F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.dat
+│   │   │   ├── F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699
+│   │   │   ├── F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.dat
+│   │   │   ├── F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799
+│   │   │   ├── F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.dat
+│   │   │   ├── F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900
+│   │   │   ├── F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.dat
+│   │   │   ├── F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000
+│   │   │   ├── F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.dat
+│   │   │   ├── F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100
+│   │   │   ├── F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.dat
+│   │   │   ├── F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200
+│   │   │   ├── F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.dat
+│   │   │   ├── F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300
+│   │   │   ├── F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.dat
+│   │   │   ├── F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399
+│   │   │   ├── F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.dat
+│   │   │   ├── F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499
+│   │   │   ├── F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.dat
+│   │   │   ├── F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600
+│   │   │   ├── F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.dat
+│   │   │   ├── F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699
+│   │   │   ├── F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.dat
+│   │   │   ├── F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800
+│   │   │   ├── F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.dat
+│   │   │   ├── F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899
+│   │   │   ├── F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.dat
+│   │   │   ├── F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000
+│   │   │   ├── F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.dat
+│   │   │   ├── F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100
+│   │   │   ├── F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.dat
+│   │   │   ├── F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200
+│   │   │   ├── F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.dat
+│   │   │   ├── F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300
+│   │   │   ├── F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.dat
+│   │   │   ├── F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400
+│   │   │   ├── F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.dat
+│   │   │   ├── F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.dat.gitids.txt
+│   │   │   ├── F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── F33X_2019_05_10_22.57.31_DC_vs_Is_0to10uA
+│   │   │   ├── F33X_2019_05_10_22.57.31_DC_vs_Is_0to10uA.dat
+│   │   │   ├── F33X_2019_05_10_22.57.31_DC_vs_Is_0to10uA.dat.gitids.txt
+│   │   │   ├── F33X_2019_05_10_22.57.31_DC_vs_Is_0to10uA.meta.txt
+│   │   │   └── megameasurement_findmin_200mVpp.py
+│   │   ├── megameasurement_findmin_200mVpp.py
+│   │   └── __pycache__
+│   │       └── _cal_power.cpython-36.pyc
+│   ├── F40_noisefloor_3
+│   │   ├── 1Hz_0dB
+│   │   │   ├── F40_2019_05_29_13.23.27_SA_noisefloor_1Hz_HEMToffMITEQson
+│   │   │   │   ├── F40_2019_05_29_13.23.27_SA_noisefloor_1Hz_HEMToffMITEQson.dat
+│   │   │   │   ├── F40_2019_05_29_13.23.27_SA_noisefloor_1Hz_HEMToffMITEQson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.23.27_SA_noisefloor_1Hz_HEMToffMITEQson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.24.19_SA_noisefloor_1Hz_allampsoff
+│   │   │   │   ├── F40_2019_05_29_13.24.19_SA_noisefloor_1Hz_allampsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.24.19_SA_noisefloor_1Hz_allampsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.24.19_SA_noisefloor_1Hz_allampsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.25.18_SA_noisefloor_1Hz_HEMTonMITEQsoff
+│   │   │   │   ├── F40_2019_05_29_13.25.18_SA_noisefloor_1Hz_HEMTonMITEQsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.25.18_SA_noisefloor_1Hz_HEMTonMITEQsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.25.18_SA_noisefloor_1Hz_HEMTonMITEQsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.29.05_SA_noisefloor_1Hz_allampson
+│   │   │   │   ├── F40_2019_05_29_13.29.05_SA_noisefloor_1Hz_allampson.dat
+│   │   │   │   ├── F40_2019_05_29_13.29.05_SA_noisefloor_1Hz_allampson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.29.05_SA_noisefloor_1Hz_allampson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.30.24_SA_noisefloor_50Ohminput
+│   │   │   │   ├── F40_2019_05_29_13.30.24_SA_noisefloor_50Ohminput.dat
+│   │   │   │   ├── F40_2019_05_29_13.30.24_SA_noisefloor_50Ohminput.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.30.24_SA_noisefloor_50Ohminput.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── noisefloor.py
+│   │   │   └── plots
+│   │   │       ├── F40_2019_05_29_13.23.27_SA_noisefloor_1Hz_HEMToffMITEQson.png
+│   │   │       ├── F40_2019_05_29_13.24.19_SA_noisefloor_1Hz_allampsoff.png
+│   │   │       ├── F40_2019_05_29_13.25.18_SA_noisefloor_1Hz_HEMTonMITEQsoff.png
+│   │   │       ├── F40_2019_05_29_13.29.05_SA_noisefloor_1Hz_allampson.png
+│   │   │       └── F40_2019_05_29_13.30.24_SA_noisefloor_50Ohminput.png
+│   │   ├── 1Hz_20dB
+│   │   │   ├── F40_2019_05_29_13.14.02_SA_noisefloor_1Hz_50Ohminput
+│   │   │   │   ├── F40_2019_05_29_13.14.02_SA_noisefloor_1Hz_50Ohminput.dat
+│   │   │   │   ├── F40_2019_05_29_13.14.02_SA_noisefloor_1Hz_50Ohminput.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.14.02_SA_noisefloor_1Hz_50Ohminput.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.17.07_SA_noisefloor_1Hz_allampsoff
+│   │   │   │   ├── F40_2019_05_29_13.17.07_SA_noisefloor_1Hz_allampsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.17.07_SA_noisefloor_1Hz_allampsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.17.07_SA_noisefloor_1Hz_allampsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.18.11_SA_noisefloor_1Hz_allampson
+│   │   │   │   ├── F40_2019_05_29_13.18.11_SA_noisefloor_1Hz_allampson.dat
+│   │   │   │   ├── F40_2019_05_29_13.18.11_SA_noisefloor_1Hz_allampson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.18.11_SA_noisefloor_1Hz_allampson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.19.07_SA_noisefloor_1Hz_HEMTonMITEQsoff
+│   │   │   │   ├── F40_2019_05_29_13.19.07_SA_noisefloor_1Hz_HEMTonMITEQsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.19.07_SA_noisefloor_1Hz_HEMTonMITEQsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.19.07_SA_noisefloor_1Hz_HEMTonMITEQsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.20.23_SA_noisefloor_1Hz_HEMToffMITEQson
+│   │   │   │   ├── F40_2019_05_29_13.20.23_SA_noisefloor_1Hz_HEMToffMITEQson.dat
+│   │   │   │   ├── F40_2019_05_29_13.20.23_SA_noisefloor_1Hz_HEMToffMITEQson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.20.23_SA_noisefloor_1Hz_HEMToffMITEQson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── noisefloor.py
+│   │   │   └── plots
+│   │   │       ├── F40_2019_05_29_13.14.02_SA_noisefloor_1Hz_50Ohminput.png
+│   │   │       ├── F40_2019_05_29_13.17.07_SA_noisefloor_1Hz_allampsoff.png
+│   │   │       ├── F40_2019_05_29_13.18.11_SA_noisefloor_1Hz_allampson.png
+│   │   │       ├── F40_2019_05_29_13.19.07_SA_noisefloor_1Hz_HEMTonMITEQsoff.png
+│   │   │       └── F40_2019_05_29_13.20.23_SA_noisefloor_1Hz_HEMToffMITEQson.png
+│   │   ├── 1Hz_varyatt
+│   │   │   ├── F40_2019_05_29_13.38.58_SA_noisefloor_varyatt_1Hz
+│   │   │   │   ├── F40_2019_05_29_13.38.58_SA_noisefloor_varyatt_1Hz.dat
+│   │   │   │   ├── F40_2019_05_29_13.38.58_SA_noisefloor_varyatt_1Hz.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.38.58_SA_noisefloor_varyatt_1Hz.meta.txt
+│   │   │   │   └── noisefloor.py
+│   │   │   └── noisefloor.py
+│   │   ├── 5Hz_0dB
+│   │   │   ├── F40_2019_05_29_13.31.15_SA_noisefloor_50Ohminput
+│   │   │   │   ├── F40_2019_05_29_13.31.15_SA_noisefloor_50Ohminput.dat
+│   │   │   │   ├── F40_2019_05_29_13.31.15_SA_noisefloor_50Ohminput.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.31.15_SA_noisefloor_50Ohminput.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.31.59_SA_noisefloor_allampson
+│   │   │   │   ├── F40_2019_05_29_13.31.59_SA_noisefloor_allampson.dat
+│   │   │   │   ├── F40_2019_05_29_13.31.59_SA_noisefloor_allampson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.31.59_SA_noisefloor_allampson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.32.29_SA_noisefloor_allampsoff
+│   │   │   │   ├── F40_2019_05_29_13.32.29_SA_noisefloor_allampsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.32.29_SA_noisefloor_allampsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.32.29_SA_noisefloor_allampsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.32.48_SA_noisefloor_HEMToffMITEQson
+│   │   │   │   ├── F40_2019_05_29_13.32.48_SA_noisefloor_HEMToffMITEQson.dat
+│   │   │   │   ├── F40_2019_05_29_13.32.48_SA_noisefloor_HEMToffMITEQson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.32.48_SA_noisefloor_HEMToffMITEQson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_29_13.33.16_SA_noisefloor_HEMTonMITEQsoff
+│   │   │   │   ├── F40_2019_05_29_13.33.16_SA_noisefloor_HEMTonMITEQsoff.dat
+│   │   │   │   ├── F40_2019_05_29_13.33.16_SA_noisefloor_HEMTonMITEQsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_29_13.33.16_SA_noisefloor_HEMTonMITEQsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── noisefloor.py
+│   │   │   └── plots
+│   │   │       ├── F40_2019_05_29_13.31.15_SA_noisefloor_50Ohminput.png
+│   │   │       ├── F40_2019_05_29_13.31.59_SA_noisefloor_allampson.png
+│   │   │       ├── F40_2019_05_29_13.32.29_SA_noisefloor_allampsoff.png
+│   │   │       ├── F40_2019_05_29_13.32.48_SA_noisefloor_HEMToffMITEQson.png
+│   │   │       └── F40_2019_05_29_13.33.16_SA_noisefloor_HEMTonMITEQsoff.png
+│   │   ├── 5Hz_20dB
+│   │   │   ├── F40_2019_05_28_17.49.56_SA_noisefloor_allampsoff
+│   │   │   │   ├── F40_2019_05_28_17.49.56_SA_noisefloor_allampsoff.dat
+│   │   │   │   ├── F40_2019_05_28_17.49.56_SA_noisefloor_allampsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_28_17.49.56_SA_noisefloor_allampsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_28_17.50.59_SA_noisefloor_allampson
+│   │   │   │   ├── F40_2019_05_28_17.50.59_SA_noisefloor_allampson.dat
+│   │   │   │   ├── F40_2019_05_28_17.50.59_SA_noisefloor_allampson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_28_17.50.59_SA_noisefloor_allampson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_28_17.51.34_SA_noisefloor_HEMTonMITEQsoff
+│   │   │   │   ├── F40_2019_05_28_17.51.34_SA_noisefloor_HEMTonMITEQsoff.dat
+│   │   │   │   ├── F40_2019_05_28_17.51.34_SA_noisefloor_HEMTonMITEQsoff.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_28_17.51.34_SA_noisefloor_HEMTonMITEQsoff.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_28_17.52.02_SA_noisefloor_HEMToffMITEQson
+│   │   │   │   ├── F40_2019_05_28_17.52.02_SA_noisefloor_HEMToffMITEQson.dat
+│   │   │   │   ├── F40_2019_05_28_17.52.02_SA_noisefloor_HEMToffMITEQson.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_28_17.52.02_SA_noisefloor_HEMToffMITEQson.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── F40_2019_05_28_17.52.53_SA_noisefloor_50Ohminput
+│   │   │   │   ├── F40_2019_05_28_17.52.53_SA_noisefloor_50Ohminput.dat
+│   │   │   │   ├── F40_2019_05_28_17.52.53_SA_noisefloor_50Ohminput.dat.gitids.txt
+│   │   │   │   ├── F40_2019_05_28_17.52.53_SA_noisefloor_50Ohminput.png
+│   │   │   │   └── noisefloor.py
+│   │   │   ├── noisefloor.py
+│   │   │   └── plots
+│   │   │       ├── F40_2019_05_28_17.49.56_SA_noisefloor_allampsoff.png
+│   │   │       ├── F40_2019_05_28_17.50.59_SA_noisefloor_allampson.png
+│   │   │       ├── F40_2019_05_28_17.51.34_SA_noisefloor_HEMTonMITEQsoff.png
+│   │   │       ├── F40_2019_05_28_17.52.02_SA_noisefloor_HEMToffMITEQson.png
+│   │   │       └── F40_2019_05_28_17.52.53_SA_noisefloor_50Ohminput.png
+│   │   └── 5Hz_varyatt
+│   │       ├── F40_2019_05_29_13.41.10_SA_noisefloor_varyatt_5Hz
+│   │       │   ├── F40_2019_05_29_13.41.10_SA_noisefloor_varyatt_5Hz.dat
+│   │       │   ├── F40_2019_05_29_13.41.10_SA_noisefloor_varyatt_5Hz.dat.gitids.txt
+│   │       │   ├── F40_2019_05_29_13.41.10_SA_noisefloor_varyatt_5Hz.meta.txt
+│   │       │   └── noisefloor.py
+│   │       └── noisefloor.py
+│   ├── F6_2019_02_27_13.33.38_VNA_vs_power
+│   │   ├── F6_2019_02_27_13.33.38_VNA_vs_power.dat
+│   │   ├── F6_2019_02_27_13.33.38_VNA_vs_power.meta.txt
+│   │   ├── F6_2019_02_27_13.33.38_VNA_vs_power.png
+│   │   ├── linecut1.png
+│   │   └── VNA_vs_power.py
+│   └── ref2gnd
+│       ├── _test_F1_2019_04_10_14.34.49_VNA_vs_current_16open
+│       │   ├── _test_F1_2019_04_10_14.34.49_VNA_vs_current_16open.dat
+│       │   ├── _test_F1_2019_04_10_14.34.49_VNA_vs_current_16open.meta.txt
+│       │   ├── _test_F1_2019_04_10_14.34.49_VNA_vs_current_16open.png
+│       │   ├── _test_F1_2019_04_10_14.34.49_VNA_vs_current_16open.stlab_id.txt
+│       │   └── VNA_vs_current.py
+│       └── _test_F1_2019_04_10_15.52.23_VNA_vs_current_200uA_16open
+│           ├── _test_F1_2019_04_10_15.52.23_VNA_vs_current_200uA_16open.dat
+│           ├── _test_F1_2019_04_10_15.52.23_VNA_vs_current_200uA_16open.meta.txt
+│           ├── _test_F1_2019_04_10_15.52.23_VNA_vs_current_200uA_16open.png
+│           ├── _test_F1_2019_04_10_15.52.23_VNA_vs_current_200uA_16open.stlab_id.txt
+│           └── VNA_vs_current.py
+├── data_sensitivity
+│   └── pos2
+│       ├── sensitivity_F33C_2019_05_10_22.58.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_0.pkl
+│       ├── sensitivity_F33C_2019_05_10_23.24.16_SA_vs_Is_0to10uA_200mVpp_vs_dF_100.pkl
+│       ├── sensitivity_F33C_2019_05_11_00.05.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_200.pkl
+│       ├── sensitivity_F33C_2019_05_11_00.46.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_300.pkl
+│       ├── sensitivity_F33C_2019_05_11_01.27.39_SA_vs_Is_0to10uA_200mVpp_vs_dF_400.pkl
+│       ├── sensitivity_F33C_2019_05_11_02.08.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_500.pkl
+│       ├── sensitivity_F33C_2019_05_11_02.49.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_600.pkl
+│       ├── sensitivity_F33C_2019_05_11_03.30.45_SA_vs_Is_0to10uA_200mVpp_vs_dF_700.pkl
+│       ├── sensitivity_F33C_2019_05_11_04.11.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_800.pkl
+│       ├── sensitivity_F33C_2019_05_11_04.52.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_900.pkl
+│       ├── sensitivity_F33C_2019_05_11_05.33.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_1000.pkl
+│       ├── sensitivity_F33C_2019_05_11_06.14.24_SA_vs_Is_0to10uA_200mVpp_vs_dF_1100.pkl
+│       ├── sensitivity_F33C_2019_05_11_06.55.19_SA_vs_Is_0to10uA_200mVpp_vs_dF_1200.pkl
+│       ├── sensitivity_F33C_2019_05_11_07.36.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_1299.pkl
+│       ├── sensitivity_F33C_2019_05_11_08.17.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_1400.pkl
+│       ├── sensitivity_F33C_2019_05_11_08.58.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_1500.pkl
+│       ├── sensitivity_F33C_2019_05_11_09.38.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_1600.pkl
+│       ├── sensitivity_F33C_2019_05_11_10.19.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_1699.pkl
+│       ├── sensitivity_F33C_2019_05_11_11.00.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_1800.pkl
+│       ├── sensitivity_F33C_2019_05_11_11.41.42_SA_vs_Is_0to10uA_200mVpp_vs_dF_1900.pkl
+│       ├── sensitivity_F33C_2019_05_11_12.22.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_2000.pkl
+│       ├── sensitivity_F33C_2019_05_11_13.03.31_SA_vs_Is_0to10uA_200mVpp_vs_dF_2100.pkl
+│       ├── sensitivity_F33C_2019_05_11_13.44.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_2200.pkl
+│       ├── sensitivity_F33C_2019_05_11_14.25.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_2300.pkl
+│       ├── sensitivity_F33C_2019_05_11_15.06.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_2400.pkl
+│       ├── sensitivity_F33C_2019_05_11_15.47.13_SA_vs_Is_0to10uA_200mVpp_vs_dF_2500.pkl
+│       ├── sensitivity_F33C_2019_05_11_16.28.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_2599.pkl
+│       ├── sensitivity_F33C_2019_05_11_17.09.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_2700.pkl
+│       ├── sensitivity_F33C_2019_05_11_17.49.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_2800.pkl
+│       ├── sensitivity_F33C_2019_05_11_18.30.53_SA_vs_Is_0to10uA_200mVpp_vs_dF_2899.pkl
+│       ├── sensitivity_F33C_2019_05_11_19.11.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_3000.pkl
+│       ├── sensitivity_F33C_2019_05_11_19.52.43_SA_vs_Is_0to10uA_200mVpp_vs_dF_3100.pkl
+│       ├── sensitivity_F33C_2019_05_11_20.33.38_SA_vs_Is_0to10uA_200mVpp_vs_dF_3200.pkl
+│       ├── sensitivity_F33C_2019_05_11_21.14.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_3299.pkl
+│       ├── sensitivity_F33C_2019_05_11_21.55.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_3399.pkl
+│       ├── sensitivity_F33C_2019_05_11_22.36.22_SA_vs_Is_0to10uA_200mVpp_vs_dF_3500.pkl
+│       ├── sensitivity_F33C_2019_05_11_23.17.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_3600.pkl
+│       ├── sensitivity_F33C_2019_05_11_23.58.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_3699.pkl
+│       ├── sensitivity_F33C_2019_05_12_00.39.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_3800.pkl
+│       ├── sensitivity_F33C_2019_05_12_01.20.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_3900.pkl
+│       ├── sensitivity_F33C_2019_05_12_02.00.57_SA_vs_Is_0to10uA_200mVpp_vs_dF_4000.pkl
+│       ├── sensitivity_F33C_2019_05_12_02.41.52_SA_vs_Is_0to10uA_200mVpp_vs_dF_4100.pkl
+│       ├── sensitivity_F33C_2019_05_12_03.22.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_4200.pkl
+│       ├── sensitivity_F33C_2019_05_12_04.03.41_SA_vs_Is_0to10uA_200mVpp_vs_dF_4299.pkl
+│       ├── sensitivity_F33C_2019_05_12_04.44.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_4400.pkl
+│       ├── sensitivity_F33C_2019_05_12_05.25.29_SA_vs_Is_0to10uA_200mVpp_vs_dF_4500.pkl
+│       ├── sensitivity_F33C_2019_05_12_06.06.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_4600.pkl
+│       ├── sensitivity_F33C_2019_05_12_06.47.18_SA_vs_Is_0to10uA_200mVpp_vs_dF_4700.pkl
+│       ├── sensitivity_F33C_2019_05_12_07.28.14_SA_vs_Is_0to10uA_200mVpp_vs_dF_4800.pkl
+│       ├── sensitivity_F33C_2019_05_12_08.09.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_4900.pkl
+│       ├── sensitivity_F33C_2019_05_12_08.50.04_SA_vs_Is_0to10uA_200mVpp_vs_dF_5000.pkl
+│       ├── sensitivity_F33C_2019_05_12_09.30.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_5099.pkl
+│       ├── sensitivity_F33C_2019_05_12_10.11.55_SA_vs_Is_0to10uA_200mVpp_vs_dF_5199.pkl
+│       ├── sensitivity_F33C_2019_05_12_10.52.50_SA_vs_Is_0to10uA_200mVpp_vs_dF_5300.pkl
+│       ├── sensitivity_F33C_2019_05_12_11.33.48_SA_vs_Is_0to10uA_200mVpp_vs_dF_5400.pkl
+│       ├── sensitivity_F33C_2019_05_12_12.14.46_SA_vs_Is_0to10uA_200mVpp_vs_dF_5500.pkl
+│       ├── sensitivity_F33C_2019_05_12_12.55.44_SA_vs_Is_0to10uA_200mVpp_vs_dF_5600.pkl
+│       ├── sensitivity_F33C_2019_05_12_13.36.40_SA_vs_Is_0to10uA_200mVpp_vs_dF_5700.pkl
+│       ├── sensitivity_F33C_2019_05_12_14.17.36_SA_vs_Is_0to10uA_200mVpp_vs_dF_5799.pkl
+│       ├── sensitivity_F33C_2019_05_12_14.58.35_SA_vs_Is_0to10uA_200mVpp_vs_dF_5899.pkl
+│       ├── sensitivity_F33C_2019_05_12_15.39.33_SA_vs_Is_0to10uA_200mVpp_vs_dF_6000.pkl
+│       ├── sensitivity_F33C_2019_05_12_16.20.30_SA_vs_Is_0to10uA_200mVpp_vs_dF_6100.pkl
+│       ├── sensitivity_F33C_2019_05_12_17.01.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6200.pkl
+│       ├── sensitivity_F33C_2019_05_12_17.42.25_SA_vs_Is_0to10uA_200mVpp_vs_dF_6300.pkl
+│       ├── sensitivity_F33C_2019_05_12_18.23.28_SA_vs_Is_0to10uA_200mVpp_vs_dF_6400.pkl
+│       ├── sensitivity_F33C_2019_05_12_19.04.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6500.pkl
+│       ├── sensitivity_F33C_2019_05_12_19.45.26_SA_vs_Is_0to10uA_200mVpp_vs_dF_6599.pkl
+│       ├── sensitivity_F33C_2019_05_12_20.26.23_SA_vs_Is_0to10uA_200mVpp_vs_dF_6699.pkl
+│       ├── sensitivity_F33C_2019_05_12_21.07.20_SA_vs_Is_0to10uA_200mVpp_vs_dF_6799.pkl
+│       ├── sensitivity_F33C_2019_05_12_21.48.17_SA_vs_Is_0to10uA_200mVpp_vs_dF_6900.pkl
+│       ├── sensitivity_F33C_2019_05_12_22.29.15_SA_vs_Is_0to10uA_200mVpp_vs_dF_7000.pkl
+│       ├── sensitivity_F33C_2019_05_12_23.10.12_SA_vs_Is_0to10uA_200mVpp_vs_dF_7100.pkl
+│       ├── sensitivity_F33C_2019_05_12_23.51.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7200.pkl
+│       ├── sensitivity_F33C_2019_05_13_00.32.10_SA_vs_Is_0to10uA_200mVpp_vs_dF_7300.pkl
+│       ├── sensitivity_F33C_2019_05_13_01.13.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7399.pkl
+│       ├── sensitivity_F33C_2019_05_13_01.55.34_SA_vs_Is_0to10uA_200mVpp_vs_dF_7499.pkl
+│       ├── sensitivity_F33C_2019_05_13_02.37.11_SA_vs_Is_0to10uA_200mVpp_vs_dF_7600.pkl
+│       ├── sensitivity_F33C_2019_05_13_03.18.08_SA_vs_Is_0to10uA_200mVpp_vs_dF_7699.pkl
+│       ├── sensitivity_F33C_2019_05_13_03.59.06_SA_vs_Is_0to10uA_200mVpp_vs_dF_7800.pkl
+│       ├── sensitivity_F33C_2019_05_13_04.40.03_SA_vs_Is_0to10uA_200mVpp_vs_dF_7899.pkl
+│       ├── sensitivity_F33C_2019_05_13_05.21.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8000.pkl
+│       ├── sensitivity_F33C_2019_05_13_06.02.02_SA_vs_Is_0to10uA_200mVpp_vs_dF_8100.pkl
+│       ├── sensitivity_F33C_2019_05_13_06.42.59_SA_vs_Is_0to10uA_200mVpp_vs_dF_8200.pkl
+│       ├── sensitivity_F33C_2019_05_13_07.23.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8300.pkl
+│       ├── sensitivity_F33C_2019_05_13_08.04.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8400.pkl
+│       ├── sensitivity_F33C_2019_05_13_08.45.58_SA_vs_Is_0to10uA_200mVpp_vs_dF_8500.pkl
+│       ├── sensitivity_F33E_2019_05_10_23.13.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_0.pkl
+│       ├── sensitivity_F33E_2019_05_10_23.39.32_SA_vs_Is_0to10uA_200mVpp_vs_pwr_100.pkl
+│       ├── sensitivity_F33E_2019_05_11_00.20.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_200.pkl
+│       ├── sensitivity_F33E_2019_05_11_01.01.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_300.pkl
+│       ├── sensitivity_F33E_2019_05_11_01.42.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_400.pkl
+│       ├── sensitivity_F33E_2019_05_11_02.24.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_500.pkl
+│       ├── sensitivity_F33E_2019_05_11_03.05.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_600.pkl
+│       ├── sensitivity_F33E_2019_05_11_03.45.56_SA_vs_Is_0to10uA_200mVpp_vs_pwr_700.pkl
+│       ├── sensitivity_F33E_2019_05_11_04.26.52_SA_vs_Is_0to10uA_200mVpp_vs_pwr_800.pkl
+│       ├── sensitivity_F33E_2019_05_11_05.07.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_900.pkl
+│       ├── sensitivity_F33E_2019_05_11_05.48.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1000.pkl
+│       ├── sensitivity_F33E_2019_05_11_06.29.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1100.pkl
+│       ├── sensitivity_F33E_2019_05_11_07.10.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1200.pkl
+│       ├── sensitivity_F33E_2019_05_11_07.51.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1299.pkl
+│       ├── sensitivity_F33E_2019_05_11_08.32.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1400.pkl
+│       ├── sensitivity_F33E_2019_05_11_09.13.13_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1500.pkl
+│       ├── sensitivity_F33E_2019_05_11_09.54.08_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1600.pkl
+│       ├── sensitivity_F33E_2019_05_11_10.35.02_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1699.pkl
+│       ├── sensitivity_F33E_2019_05_11_11.15.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1800.pkl
+│       ├── sensitivity_F33E_2019_05_11_11.56.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_1900.pkl
+│       ├── sensitivity_F33E_2019_05_11_12.37.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2000.pkl
+│       ├── sensitivity_F33E_2019_05_11_13.18.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2100.pkl
+│       ├── sensitivity_F33E_2019_05_11_13.59.37_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2200.pkl
+│       ├── sensitivity_F33E_2019_05_11_14.40.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2300.pkl
+│       ├── sensitivity_F33E_2019_05_11_15.21.29_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2400.pkl
+│       ├── sensitivity_F33E_2019_05_11_16.02.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2500.pkl
+│       ├── sensitivity_F33E_2019_05_11_16.43.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2599.pkl
+│       ├── sensitivity_F33E_2019_05_11_17.24.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2700.pkl
+│       ├── sensitivity_F33E_2019_05_11_18.05.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2800.pkl
+│       ├── sensitivity_F33E_2019_05_11_18.46.04_SA_vs_Is_0to10uA_200mVpp_vs_pwr_2899.pkl
+│       ├── sensitivity_F33E_2019_05_11_19.26.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3000.pkl
+│       ├── sensitivity_F33E_2019_05_11_20.07.54_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3100.pkl
+│       ├── sensitivity_F33E_2019_05_11_20.48.49_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3200.pkl
+│       ├── sensitivity_F33E_2019_05_11_21.29.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3299.pkl
+│       ├── sensitivity_F33E_2019_05_11_22.10.39_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3399.pkl
+│       ├── sensitivity_F33E_2019_05_11_22.51.34_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3500.pkl
+│       ├── sensitivity_F33E_2019_05_11_23.32.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3600.pkl
+│       ├── sensitivity_F33E_2019_05_12_00.13.24_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3699.pkl
+│       ├── sensitivity_F33E_2019_05_12_00.54.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3800.pkl
+│       ├── sensitivity_F33E_2019_05_12_01.35.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_3900.pkl
+│       ├── sensitivity_F33E_2019_05_12_02.16.09_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4000.pkl
+│       ├── sensitivity_F33E_2019_05_12_02.57.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4100.pkl
+│       ├── sensitivity_F33E_2019_05_12_03.37.58_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4200.pkl
+│       ├── sensitivity_F33E_2019_05_12_04.18.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4299.pkl
+│       ├── sensitivity_F33E_2019_05_12_04.59.46_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4400.pkl
+│       ├── sensitivity_F33E_2019_05_12_05.40.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4500.pkl
+│       ├── sensitivity_F33E_2019_05_12_06.21.35_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4600.pkl
+│       ├── sensitivity_F33E_2019_05_12_07.02.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4700.pkl
+│       ├── sensitivity_F33E_2019_05_12_07.43.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4800.pkl
+│       ├── sensitivity_F33E_2019_05_12_08.24.20_SA_vs_Is_0to10uA_200mVpp_vs_pwr_4900.pkl
+│       ├── sensitivity_F33E_2019_05_12_09.05.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5000.pkl
+│       ├── sensitivity_F33E_2019_05_12_09.46.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5099.pkl
+│       ├── sensitivity_F33E_2019_05_12_10.27.06_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5199.pkl
+│       ├── sensitivity_F33E_2019_05_12_11.08.03_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5300.pkl
+│       ├── sensitivity_F33E_2019_05_12_11.49.01_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5400.pkl
+│       ├── sensitivity_F33E_2019_05_12_12.29.59_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5500.pkl
+│       ├── sensitivity_F33E_2019_05_12_13.10.57_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5600.pkl
+│       ├── sensitivity_F33E_2019_05_12_13.51.53_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5700.pkl
+│       ├── sensitivity_F33E_2019_05_12_14.32.50_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5799.pkl
+│       ├── sensitivity_F33E_2019_05_12_15.13.48_SA_vs_Is_0to10uA_200mVpp_vs_pwr_5899.pkl
+│       ├── sensitivity_F33E_2019_05_12_15.54.45_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6000.pkl
+│       ├── sensitivity_F33E_2019_05_12_16.35.44_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6100.pkl
+│       ├── sensitivity_F33E_2019_05_12_17.16.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6200.pkl
+│       ├── sensitivity_F33E_2019_05_12_17.57.43_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6300.pkl
+│       ├── sensitivity_F33E_2019_05_12_18.38.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6400.pkl
+│       ├── sensitivity_F33E_2019_05_12_19.19.41_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6500.pkl
+│       ├── sensitivity_F33E_2019_05_12_20.00.40_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6599.pkl
+│       ├── sensitivity_F33E_2019_05_12_20.41.36_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6699.pkl
+│       ├── sensitivity_F33E_2019_05_12_21.22.33_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6799.pkl
+│       ├── sensitivity_F33E_2019_05_12_22.03.30_SA_vs_Is_0to10uA_200mVpp_vs_pwr_6900.pkl
+│       ├── sensitivity_F33E_2019_05_12_22.44.28_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7000.pkl
+│       ├── sensitivity_F33E_2019_05_12_23.25.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7100.pkl
+│       ├── sensitivity_F33E_2019_05_13_00.06.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7200.pkl
+│       ├── sensitivity_F33E_2019_05_13_00.47.23_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7300.pkl
+│       ├── sensitivity_F33E_2019_05_13_01.28.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7399.pkl
+│       ├── sensitivity_F33E_2019_05_13_02.11.26_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7499.pkl
+│       ├── sensitivity_F33E_2019_05_13_02.52.25_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7600.pkl
+│       ├── sensitivity_F33E_2019_05_13_03.33.21_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7699.pkl
+│       ├── sensitivity_F33E_2019_05_13_04.14.19_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7800.pkl
+│       ├── sensitivity_F33E_2019_05_13_04.55.17_SA_vs_Is_0to10uA_200mVpp_vs_pwr_7899.pkl
+│       ├── sensitivity_F33E_2019_05_13_05.36.16_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8000.pkl
+│       ├── sensitivity_F33E_2019_05_13_06.17.15_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8100.pkl
+│       ├── sensitivity_F33E_2019_05_13_06.58.14_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8200.pkl
+│       ├── sensitivity_F33E_2019_05_13_07.39.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8300.pkl
+│       └── sensitivity_F33E_2019_05_13_08.20.11_SA_vs_Is_0to10uA_200mVpp_vs_pwr_8400.pkl
+├── Duffing
+│   ├── F_ResponsePowerDep_SingleTone_max.dat
+│   ├── F_ResponsePowerDep_SingleTone_max.meta.txt
+│   ├── F_ResponsePowerDep_SingleTone_med.dat
+│   ├── F_ResponsePowerDep_SingleTone_med.meta.txt
+│   ├── F_ResponsePowerDep_SingleTone_min.dat
+│   ├── F_ResponsePowerDep_SingleTone_min.meta.txt
+│   ├── highres_1JJ
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_0900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_1900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_2900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_3900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_4900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_5900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6700.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6700.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6800.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6800.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6900.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_6900.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7000.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7000.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7100.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7100.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7200.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7200.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7300.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7300.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7400.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7400.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7500.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7500.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7600.dat
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7600.meta.txt
+│   │   ├── F_ResponsePowerDep_SingleTone_1JJ_7700.dat
+│   │   └── F_ResponsePowerDep_SingleTone_1JJ_7700.meta.txt
+│   ├── JJarrayCPW_1.0_845_0000.dat
+│   ├── JJarrayCPW_1.0_845_0000.meta.txt
+│   ├── JJarrayCPW_1.0_845_0100.dat
+│   ├── JJarrayCPW_1.0_845_0100.meta.txt
+│   ├── JJarrayCPW_1.0_845_0200.dat
+│   ├── JJarrayCPW_1.0_845_0200.meta.txt
+│   ├── JJarrayCPW_1.0_845_0300.dat
+│   ├── JJarrayCPW_1.0_845_0300.meta.txt
+│   ├── JJarrayCPW_1.0_845_0400.dat
+│   ├── JJarrayCPW_1.0_845_0400.meta.txt
+│   ├── JJarrayCPW_1.0_845_0500.dat
+│   ├── JJarrayCPW_1.0_845_0500.meta.txt
+│   ├── JJarrayCPW_1.0_845_0600.dat
+│   ├── JJarrayCPW_1.0_845_0600.meta.txt
+│   ├── JJarrayCPW_1.0_845_0700.dat
+│   ├── JJarrayCPW_1.0_845_0700.meta.txt
+│   ├── JJarrayCPW_1.0_845_0800.dat
+│   ├── JJarrayCPW_1.0_845_0800.meta.txt
+│   ├── JJarrayCPW_1.0_845_0900.dat
+│   ├── JJarrayCPW_1.0_845_0900.meta.txt
+│   ├── JJarrayCPW_1.0_845_1000.dat
+│   ├── JJarrayCPW_1.0_845_1000.meta.txt
+│   ├── JJarrayCPW_1.0_845_1100.dat
+│   ├── JJarrayCPW_1.0_845_1100.meta.txt
+│   ├── JJarrayCPW_1.0_845_1200.dat
+│   ├── JJarrayCPW_1.0_845_1200.meta.txt
+│   ├── JJarrayCPW_1.0_845_1300.dat
+│   ├── JJarrayCPW_1.0_845_1300.meta.txt
+│   ├── JJarrayCPW_1.0_845_1400.dat
+│   ├── JJarrayCPW_1.0_845_1400.meta.txt
+│   ├── JJarrayCPW_1.0_845_1500.dat
+│   ├── JJarrayCPW_1.0_845_1500.meta.txt
+│   ├── JJarrayCPW_1.0_845_1600.dat
+│   ├── JJarrayCPW_1.0_845_1600.meta.txt
+│   ├── JJarrayCPW_1.0_845_1700.dat
+│   ├── JJarrayCPW_1.0_845_1700.meta.txt
+│   ├── JJarrayCPW_1.0_845_1800.dat
+│   ├── JJarrayCPW_1.0_845_1800.meta.txt
+│   ├── JJarrayCPW_1.0_845_1900.dat
+│   ├── JJarrayCPW_1.0_845_1900.meta.txt
+│   ├── JJarrayCPW_1.0_845_2000.dat
+│   ├── JJarrayCPW_1.0_845_2000.meta.txt
+│   ├── JJarrayCPW_1.0_845_2100.dat
+│   ├── JJarrayCPW_1.0_845_2100.meta.txt
+│   ├── JJarrayCPW_1.0_845_2200.dat
+│   ├── JJarrayCPW_1.0_845_2200.meta.txt
+│   ├── JJarrayCPW_1.0_845_2300.dat
+│   ├── JJarrayCPW_1.0_845_2300.meta.txt
+│   ├── JJarrayCPW_1.0_845_2400.dat
+│   ├── JJarrayCPW_1.0_845_2400.meta.txt
+│   ├── JJarrayCPW_1.0_845_2500.dat
+│   ├── JJarrayCPW_1.0_845_2500.meta.txt
+│   ├── JJarrayCPW_1.0_845_2600.dat
+│   ├── JJarrayCPW_1.0_845_2600.meta.txt
+│   ├── JJarrayCPW_1.0_845_2700.dat
+│   ├── JJarrayCPW_1.0_845_2700.meta.txt
+│   ├── JJarrayCPW_1.0_845_2800.dat
+│   ├── JJarrayCPW_1.0_845_2800.meta.txt
+│   ├── JJarrayCPW_1.0_845_2900.dat
+│   ├── JJarrayCPW_1.0_845_2900.meta.txt
+│   ├── JJarrayCPW_1.0_845_3000.dat
+│   ├── JJarrayCPW_1.0_845_3000.meta.txt
+│   ├── JJarrayCPW_1.0_845_3100.dat
+│   ├── JJarrayCPW_1.0_845_3100.meta.txt
+│   ├── JJarrayCPW_1.0_845_3200.dat
+│   ├── JJarrayCPW_1.0_845_3200.meta.txt
+│   ├── JJarrayCPW_1.0_845_3300.dat
+│   ├── JJarrayCPW_1.0_845_3300.meta.txt
+│   ├── JJarrayCPW_1.0_845_3400.dat
+│   ├── JJarrayCPW_1.0_845_3400.meta.txt
+│   ├── JJarrayCPW_1.0_845_3500.dat
+│   ├── JJarrayCPW_1.0_845_3500.meta.txt
+│   ├── JJarrayCPW_1.0_845_3600.dat
+│   ├── JJarrayCPW_1.0_845_3600.meta.txt
+│   ├── JJarrayCPW_1.0_845_3700.dat
+│   ├── JJarrayCPW_1.0_845_3700.meta.txt
+│   ├── JJarrayCPW_1.0_845_3800.dat
+│   ├── JJarrayCPW_1.0_845_3800.meta.txt
+│   ├── JJarrayCPW_1.0_845_3900.dat
+│   ├── JJarrayCPW_1.0_845_3900.meta.txt
+│   ├── JJarrayCPW_1.0_845_4000.dat
+│   ├── JJarrayCPW_1.0_845_4000.meta.txt
+│   ├── JJarrayCPW_1.0_845_4100.dat
+│   ├── JJarrayCPW_1.0_845_4100.meta.txt
+│   ├── JJarrayCPW_1.0_845_4200.dat
+│   ├── JJarrayCPW_1.0_845_4200.meta.txt
+│   ├── JJarrayCPW_1.0_845_4300.dat
+│   ├── JJarrayCPW_1.0_845_4300.meta.txt
+│   ├── JJarrayCPW_1.0_845_4400.dat
+│   ├── JJarrayCPW_1.0_845_4400.meta.txt
+│   ├── JJarrayCPW_1.0_845_4500.dat
+│   ├── JJarrayCPW_1.0_845_4500.meta.txt
+│   ├── JJarrayCPW_1.0_845_4600.dat
+│   ├── JJarrayCPW_1.0_845_4600.meta.txt
+│   ├── JJarrayCPW_1.0_845_4700.dat
+│   ├── JJarrayCPW_1.0_845_4700.meta.txt
+│   ├── JJarrayCPW_1.0_845_4800.dat
+│   ├── JJarrayCPW_1.0_845_4800.meta.txt
+│   ├── JJarrayCPW_1.0_845_4900.dat
+│   ├── JJarrayCPW_1.0_845_4900.meta.txt
+│   ├── JJarrayCPW_1.0_845_5000.dat
+│   ├── JJarrayCPW_1.0_845_5000.meta.txt
+│   ├── JJarrayCPW_1.0_845_5100.dat
+│   ├── JJarrayCPW_1.0_845_5100.meta.txt
+│   ├── JJarrayCPW_1.0_845_5200.dat
+│   ├── JJarrayCPW_1.0_845_5200.meta.txt
+│   ├── JJarrayCPW_1.0_845_5300.dat
+│   ├── JJarrayCPW_1.0_845_5300.meta.txt
+│   ├── JJarrayCPW_1.0_845_5400.dat
+│   ├── JJarrayCPW_1.0_845_5400.meta.txt
+│   ├── JJarrayCPW_1.0_845_5500.dat
+│   ├── JJarrayCPW_1.0_845_5500.meta.txt
+│   ├── JJarrayCPW_1.0_845_5600.dat
+│   ├── JJarrayCPW_1.0_845_5600.meta.txt
+│   ├── JJarrayCPW_1.0_845_5700.dat
+│   ├── JJarrayCPW_1.0_845_5700.meta.txt
+│   ├── JJarrayCPW_1.0_845_5800.dat
+│   ├── JJarrayCPW_1.0_845_5800.meta.txt
+│   ├── JJarrayCPW_1.0_845_5900.dat
+│   ├── JJarrayCPW_1.0_845_5900.meta.txt
+│   ├── JJarrayCPW_1.0_845_6000.dat
+│   ├── JJarrayCPW_1.0_845_6000.meta.txt
+│   ├── JJarrayCPW_1.0_845_6100.dat
+│   ├── JJarrayCPW_1.0_845_6100.meta.txt
+│   ├── JJarrayCPW_1.0_845_6200.dat
+│   ├── JJarrayCPW_1.0_845_6200.meta.txt
+│   ├── JJarrayCPW_1.0_845_6300.dat
+│   ├── JJarrayCPW_1.0_845_6300.meta.txt
+│   ├── JJarrayCPW_1.0_845_6400.dat
+│   ├── JJarrayCPW_1.0_845_6400.meta.txt
+│   ├── JJarrayCPW_1.0_845_6500.dat
+│   ├── JJarrayCPW_1.0_845_6500.meta.txt
+│   ├── JJarrayCPW_1.0_845_6600.dat
+│   ├── JJarrayCPW_1.0_845_6600.meta.txt
+│   ├── JJarrayCPW_1.0_845_6700.dat
+│   ├── JJarrayCPW_1.0_845_6700.meta.txt
+│   ├── JJarrayCPW_1.0_845_6800.dat
+│   ├── JJarrayCPW_1.0_845_6800.meta.txt
+│   ├── JJarrayCPW_1.0_845_6900.dat
+│   ├── JJarrayCPW_1.0_845_6900.meta.txt
+│   ├── JJarrayCPW_1.0_845_7000.dat
+│   ├── JJarrayCPW_1.0_845_7000.meta.txt
+│   ├── JJarrayCPW_1.0_845_7100.dat
+│   ├── JJarrayCPW_1.0_845_7100.meta.txt
+│   ├── JJarrayCPW_1.0_845_7200.dat
+│   ├── JJarrayCPW_1.0_845_7200.meta.txt
+│   ├── JJarrayCPW_1.0_845_7300.dat
+│   ├── JJarrayCPW_1.0_845_7300.meta.txt
+│   ├── JJarrayCPW_1.0_845_7400.dat
+│   ├── JJarrayCPW_1.0_845_7400.meta.txt
+│   ├── JJarrayCPW_1.0_845_7500.dat
+│   ├── JJarrayCPW_1.0_845_7500.meta.txt
+│   ├── JJarrayCPW_1.0_845_7600.dat
+│   ├── JJarrayCPW_1.0_845_7600.meta.txt
+│   ├── JJarrayCPW_1.0_845_7700.dat
+│   ├── JJarrayCPW_1.0_845_7700.meta.txt
+│   ├── JJarrayCPW_1.0_845_7800.dat
+│   ├── JJarrayCPW_1.0_845_7800.meta.txt
+│   ├── JJarrayCPW_1.0_845_7900.dat
+│   ├── JJarrayCPW_1.0_845_7900.meta.txt
+│   ├── JJarrayCPW_1.0_845_8000.dat
+│   ├── JJarrayCPW_1.0_845_8000.meta.txt
+│   ├── JJarrayCPW_1.0_845_8100.dat
+│   ├── JJarrayCPW_1.0_845_8100.meta.txt
+│   ├── JJarrayCPW_1.0_845_8200.dat
+│   ├── JJarrayCPW_1.0_845_8200.meta.txt
+│   ├── JJarrayCPW_1.0_845_8300.dat
+│   ├── JJarrayCPW_1.0_845_8300.meta.txt
+│   ├── JJarrayCPW_1.0_845_8400.dat
+│   ├── JJarrayCPW_1.0_845_8400.meta.txt
+│   ├── JJarrayCPW_1.0_845_8500.dat
+│   ├── JJarrayCPW_1.0_845_8500.meta.txt
+│   ├── JJarrayCPW_1.0_845_8600.dat
+│   ├── JJarrayCPW_1.0_845_8600.meta.txt
+│   ├── JJarrayCPW_1.0_845_8700.dat
+│   ├── JJarrayCPW_1.0_845_8700.meta.txt
+│   ├── JJarrayCPW_1.0_845_8800.dat
+│   ├── JJarrayCPW_1.0_845_8800.meta.txt
+│   ├── JJarrayCPW_1.0_845_8900.dat
+│   ├── JJarrayCPW_1.0_845_8900.meta.txt
+│   ├── JJarrayCPW_1.0_845_9000.dat
+│   └── JJarrayCPW_1.0_845_9000.meta.txt
+├── figures
+│   ├── fig1
+│   │   ├── Figure12.pdf
+│   │   ├── Figure1.ipynb
+│   │   ├── Figure1.pdf
+│   │   └── temp
+│   │       ├── bottom-left-stitch.tif
+│   │       ├── img_382.jpg
+│   │       ├── optical_big2.svg.png
+│   │       ├── optical_big_colored2.png
+│   │       ├── optical_big_colored.png
+│   │       ├── optical_big.svg
+│   │       ├── optical_big.svg.png
+│   │       ├── optical_small2.svg.png
+│   │       ├── optical_small_colored2.png
+│   │       ├── optical_small_colored.png
+│   │       ├── optical_small.svg
+│   │       ├── optical_small.svg.png
+│   │       ├── rfcircuit.svg
+│   │       └── rfcircuit.svg.png
+│   ├── fig2
+│   │   ├── Figure2.ipynb
+│   │   └── Figure2.pdf
+│   ├── fig3
+│   │   ├── Figure3.ipynb
+│   │   └── Figure3.pdf
+│   ├── fig4
+│   │   ├── Figure4.ipynb
+│   │   ├── Figure4.pdf
+│   │   └── temp
+│   │       ├── fig4_panel_a.pkl
+│   │       ├── fig4_panel_b.pkl
+│   │       └── fig4_panel_c.pkl
+│   ├── fig5
+│   │   ├── Figure5.ipynb
+│   │   ├── Figure5.pdf
+│   │   └── temp
+│   │       ├── fig5_CPW_cmap.svg
+│   │       └── fig5_CPW_cmap.svg.png
+│   ├── my_rcparams.mplstyle
+│   ├── panel_fig4_int_data.pkl
+│   └── SMfigs
+│       ├── SM_50Hz_interference.ipynb
+│       ├── SM_50Hz_interference.pdf
+│       ├── SM_Duffing_on_resonance.ipynb
+│       ├── SM_Duffing_on_resonance.pdf
+│       ├── SM_frequency_shift_ref.ipynb
+│       ├── SM_frequency_shift_ref.pdf
+│       ├── SM_interpolation.ipynb
+│       ├── SM_interpolation.pdf
+│       ├── SM_lossrates.ipynb
+│       ├── SM_lossrates.pdf
+│       ├── SM_plusminus.ipynb
+│       ├── SM_plusminus.pdf
+│       ├── SM_reflection_coefficient.ipynb
+│       ├── SM_reflection_coefficient.pdf
+│       ├── SM_second_order_peak.ipynb
+│       └── SM_second_order_peak.pdf
+├── __init__.py
+├── input-output formalism
+│   ├── am1.2.py
+│   ├── am1.3.py
+│   ├── am2.2.py
+│   ├── am2.3.py
+│   ├── am3.3.py
+│   ├── ap1.2.py
+│   ├── ap1.3.py
+│   ├── ap2.2.py
+│   ├── ap2.3.py
+│   ├── ap3.3.py
+│   ├── Export to Python.nb
+│   ├── foo.py
+│   ├── input-output formalism.nb
+│   ├── input-output formalism.nb.second_order_am1.py
+│   ├── input-output formalism.nb.second_order_am2.py
+│   ├── input-output formalism.nb.second_order_ap1.py
+│   ├── input-output formalism.nb.second_order_ap2.py
+│   ├── input-output formalism.nb.third_order_am1.py
+│   ├── input-output formalism.nb.third_order_am2.py
+│   ├── input-output formalism.nb.third_order_am3.py
+│   ├── input-output formalism.nb.third_order_ap1.py
+│   ├── input-output formalism.nb.third_order_ap2.py
+│   ├── input-output formalism.nb.third_order_ap3.py
+│   ├── input-output formalism_nonlinear.nb
+│   ├── input-output formalism_simplified.nb
+│   ├── model_final_plot_dF_corder1_porder1.png
+│   ├── model_final_plot_dF_corder2_porder1.png
+│   ├── model_final_plot_dF_corder2_porder2.png
+│   ├── model_final_plot_dF_corder3_porder1.png
+│   ├── model_final_plot_dF_corder3_porder2.png
+│   ├── model_final_plot_dF_corder3_porder3.png
+│   ├── model_final_plot_Is_corder1_porder1.png
+│   ├── model_final_plot_Is_corder2_porder2.png
+│   ├── model_final_plot_Is_corder3_porder3.png
+│   ├── model_final_plot_Ppump_Duffing_corder1_porder1.png
+│   ├── model_final_plot_Ppump_Duffing_corder2_porder1.png
+│   ├── model_final_plot_Ppump_Duffing_corder2_porder2.png
+│   ├── model_final_plot_Ppump_Duffing_corder3_porder1.png
+│   ├── model_final_plot_Ppump_Duffing_corder3_porder2.png
+│   └── model_final_plot_Ppump_Duffing_corder3_porder3.png
+├── Investigating_datafit.py
+├── Investigating_lossrates.py
+├── JJarrayCPW_analytical_1um_01calcs.ipynb
+├── JJarrayCPW_analytical_1um_02sims.ipynb
+├── JJarrayCPW_analytical_1um_03proc.ipynb
+├── JJarrayCPW_analytical_1um_04sens.ipynb
+├── model_inputoutput_vs_Delta.py
+├── model_inputoutput_vs_Iset.py
+├── model_inputoutput_vs_Ppump_Duffing.py
+├── model_inputoutput_vs_Ppump_Duffing_vectorized.py
+├── Plot_data_Fig1.py
+├── Plot_data_Fig2.py
+├── Plot_data_Fig4.ipynb
+├── Plot_data_ref2gnd.ipynb
+├── processing_data_F33B_peaks.py
+├── processing_data_F33C_4000_peaks.py
+├── processing_data_F33C_all_peaks.py
+├── processing_data_F33E_all_peaks.py
+├── processing_fitpars_vs_Is_F30.py
+├── processing_fitpars_vs_Is.py
+├── python_info.py
+├── python_info.txt
+├── README.md
+├── README.pdf
+├── simulation_ResponseSingleTone_Power_all.py
+├── simulation_ResponseSingleTone_Power.py
+├── src
+│   ├── algo_inputoutput.py
+│   ├── algo_peakfinding.py
+│   ├── algo_peakheights.py
+│   ├── algo_sensitivity.py
+│   ├── class_fileplotter.py
+│   ├── class_filerunner.py
+│   ├── class_peakfinding.py
+│   ├── class_sensitivity.py
+│   ├── kineticL.py
+│   ├── model_currentbias.py
+│   ├── plot_dnSdfn.py
+│   ├── pparameter.dat
+│   ├── __pycache__
+│   │   ├── algo_inputoutput.cpython-36.pyc
+│   │   ├── algo_peakfinding.cpython-36.pyc
+│   │   ├── algo_peakheights.cpython-36.pyc
+│   │   ├── algo_sensitivity.cpython-36.pyc
+│   │   ├── class_fileplotter.cpython-36.pyc
+│   │   ├── class_filerunner.cpython-36.pyc
+│   │   ├── class_peakfinding.cpython-36.pyc
+│   │   ├── class_sensitivity.cpython-36.pyc
+│   │   ├── __init__.cpython-36.pyc
+│   │   ├── kineticL.cpython-36.pyc
+│   │   ├── model_currentbias.cpython-36.pyc
+│   │   ├── plot_dnSdfn.cpython-36.pyc
+│   │   ├── qucsload.cpython-36.pyc
+│   │   └── tlineformulas.cpython-36.pyc
+│   ├── qucsload.py
+│   ├── stlab-0.2.zip
+│   ├── stlabutils-0.1.zip
+│   ├── tlineformulas.py
+│   └── TLsimple.py
+├── tree_info.txt
+└── Untitled.ipynb
+
+327 directories, 2369 files

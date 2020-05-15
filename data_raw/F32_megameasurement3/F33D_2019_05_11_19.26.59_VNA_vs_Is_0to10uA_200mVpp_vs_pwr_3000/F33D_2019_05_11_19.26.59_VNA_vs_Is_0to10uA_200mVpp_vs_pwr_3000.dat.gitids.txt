@@ -1,0 +1,4 @@
+# Current stlab gitid
+03c4db3f580b93055f44200928d8252e6f0b38fe
+# Current stlabutils gitid
+52cd641f54d3549fb662e27c0379b04330c34ddb
