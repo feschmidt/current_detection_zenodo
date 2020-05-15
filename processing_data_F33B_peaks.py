@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # <h1>Table of Contents<span class="tocSkip"></span></h1>
 # <div class="toc"><ul class="toc-item"></ul></div>
 
@@ -23,7 +24,7 @@ for i, block in enumerate(data[::-4]):
     if i == 0:
         first_Is = block['Is (A)'].iloc[0]/1e-6
     plt.plot((block['Frequency (Hz)']-block['Frequency (Hz)'][len(block['Frequency (Hz)'])//2]-50*i)/1e3+0.9,
-             block['Spectrum (dBm)']-50*i+450)  # , label=r'${:.1f}\mu$A'.format(block['Is (A)'].iloc[0]/1e-6))
+             block['Spectrum (dBm)']-50*i+450)  # , label=r'{:.1f}µA'.format(block['Is (A)'].iloc[0]/1e-6))
 # plt.legend()
 plt.title('Raw measured data, shifted for visibility. Iset from {}uA to {}uA'.format(
     block['Is (A)'].iloc[0]/1e-6, first_Is))

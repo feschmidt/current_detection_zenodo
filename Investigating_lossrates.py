@@ -1,3 +1,4 @@
+# %%
 
 # coding: utf-8
 
@@ -12,7 +13,7 @@
 #
 # Based on `model_inputoutput_vs_Iset.py`
 
-# In[1]:
+# %%
 
 
 from src.model_currentbias import f0 as f0model
@@ -23,7 +24,7 @@ import lmfit
 from src.model_currentbias import lossrate
 
 
-# In[8]:
+# %%
 
 
 # Cavity parameters assuming varying values (further down indicated with "_fit")
@@ -47,7 +48,7 @@ plt.show()
 plt.close()
 
 
-# In[19]:
+# %%
 
 
 f0 = fitpars['f0 (Hz)'].values
@@ -69,7 +70,7 @@ plt.show()
 plt.close()
 
 
-# In[25]:
+# %%
 
 
 mymodel = lmfit.Model(lossrate)
@@ -79,19 +80,19 @@ keparams = mymodel.make_params(k0=kappaext[0], alpha=1, ix=1)
 keresult = mymodel.fit(kappaext/1e3, keparams, x=Iset/1e-6)
 
 
-# In[26]:
+# %%
 
 
 kiresult.params
 
 
-# In[27]:
+# %%
 
 
 keresult.params
 
 
-# In[28]:
+# %%
 
 
 plt.errorbar(Iset/1e-6, kappaint/1e3, yerr=dkappaint/1e3,
@@ -107,7 +108,7 @@ plt.show()
 plt.close()
 
 
-# In[29]:
+# %%
 
 
 mydict = {'xmeas': Iset/1e-6, 'ki': kappaint/1e3, 'kitheo': kiresult.best_fit,
@@ -117,7 +118,7 @@ mydict = {'xmeas': Iset/1e-6, 'ki': kappaint/1e3, 'kitheo': kiresult.best_fit,
 pickle.dump(mydict, open('data_final/SM_lossrate_expfit.pkl', 'wb'))
 
 
-# In[37]:
+# %%
 
 
 # export the loss rate parameters
@@ -131,7 +132,7 @@ lossratedict = {'ke0 (Hz)': keresult.params['k0'].value*1e3,
 lossratedict
 
 
-# In[38]:
+# %%
 
 
 ii = np.linspace(min(Iset), max(Iset), 401)
@@ -149,20 +150,20 @@ plt.show()
 plt.close()
 
 
-# In[39]:
+# %%
 
 
 pickle.dump(lossratedict, open(
     'data_processed/sensitivity_estimation/lossrate_expfit.pkl', 'wb'))
 
 
-# In[1]:
+# %%
 
 
 # checking whether the internal loss rate is simply proportional to dw/dI
 
 
-# In[17]:
+# %%
 
 
 f0fitdict = pickle.load(
@@ -170,10 +171,10 @@ f0fitdict = pickle.load(
 f0fitdict
 
 
-# In[14]:
+# %%
 
 
-# In[32]:
+# %%
 
 
 f0fit = f0model(ii, *f0fitdict)
@@ -186,11 +187,11 @@ plt.show()
 plt.close()
 
 
-# In[35]:
+# %%
 
 
-plt.plot(ii, lossrate(
-    ii, lossratedict['ki0 (Hz)'], lossratedict['kialpha (Hz)'], lossratedict['kiix (A)'])/(-G1fit))
+plt.plot(ii, abs(lossrate(
+    ii, lossratedict['ki0 (Hz)'], lossratedict['kialpha (Hz)'], lossratedict['kiix (A)'])/(abs(G1fit))))
 plt.yscale('log')
 plt.xlabel('Bias current (A)')
 plt.ylabel('ki/(dwdI)')
@@ -198,7 +199,13 @@ plt.show()
 plt.close()
 
 
-# In[36]:
+# %%
+plt.plot(abs(G1fit), lossrate(
+    ii, lossratedict['ki0 (Hz)'], lossratedict['kialpha (Hz)'], lossratedict['kiix (A)']))
+#plt.xscale('log')
+#plt.yscale('log')
+
+# %%
 
 
 # This is indeed not the case, so it cannot be only current noise

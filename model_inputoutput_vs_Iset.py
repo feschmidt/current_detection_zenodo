@@ -1,6 +1,4 @@
-# <h1>Table of Contents<span class="tocSkip"></span></h1>
-# <div class="toc"><ul class="toc-item"></ul></div>
-
+# -*- coding: utf-8 -*-
 # <h1>Table of Contents<span class="tocSkip"></span></h1>
 # <div class="toc"><ul class="toc-item"></ul></div>
 
@@ -105,7 +103,7 @@ Plot_model_inputoutput(meas_curr1/1e-6, meas_signal_m1,
 figure3_Is = {'xmeas': meas_curr1/1e-6, 'ymeas': meas_signal_m1, 'ymeaslabel': 'data',
               'xtheo': Iset/1e-6, 'ytheo': Sm1_dBm, 'ytheolabel': 'model ki fix',
               'xtheo2': Iset/1e-6, 'ytheo2': Sm1_dBm_fit, 'ytheolabel2': 'model ki varies',
-              'xlabel': r'Bias current ($\mu$A)', 'ylabel': 'Amplitude (dBm)'}
+              'xlabel': r'Bias current (µA)', 'ylabel': 'Amplitude (dBm)'}
 pickle.dump(figure3_Is, open('data_final/fig3_panel_Is.pkl', 'wb'))
 
 """
@@ -145,7 +143,7 @@ Plot_model_inputoutput(meas_curr2/1e-6, meas_signal_m2,
 figure3M_Is = {'xmeas': meas_curr2/1e-6, 'ymeas': meas_signal_m2, 'ymeaslabel': 'data',
                'xtheo': Iset/1e-6, 'ytheo': Sm2_dBm, 'ytheolabel': 'model ki fix',
                'xtheo2': Iset/1e-6, 'ytheo2': Sm2_dBm_fit, 'ytheolabel2': 'model ki varies',
-               'xlabel': r'Bias current ($\mu$A)', 'ylabel': 'Amplitude (dBm)'}
+               'xlabel': r'Bias current (µA)', 'ylabel': 'Amplitude (dBm)'}
 pickle.dump(figure3M_Is, open('data_final/SM_fig3_panel_Is.pkl', 'wb'))
 # -
 

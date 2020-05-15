@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # %% [markdown]
 # <h1>Table of Contents<span class="tocSkip"></span></h1>
 # <div class="toc"><ul class="toc-item"></ul></div>
@@ -166,7 +167,7 @@ plt.xlim(min(ii), max(ii))
 # %%
 fig2data = {'x1': meascurr/1e-6, 'y1': measf0/1e9, 'label': 'data',
             'xtheo': ii/1e-6, 'ytheo': ytheo/1e9, 'label': 'fit',
-            'xlabel': 'Bias current ($\mu$A)', 'ylabel': 'Frequency (GHz)',
+            'xlabel': 'Bias current (µA)', 'ylabel': 'Frequency (GHz)',
            'params':result_Icvary.params}
 pickle.dump(fig2data, open('data_final/fig2_panel_f0fit.pkl', 'wb'))
 
