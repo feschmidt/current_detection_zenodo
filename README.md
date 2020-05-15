@@ -86,5 +86,5 @@ For this, simply execute `bash runall.sh`, which performs the required execution
 23. Plot_data_Fig1.ipynb
 24. Plot_data_Fig2.ipynb
 25. Plot_data_Fig4.ipynb
-26. figures/fig*/Figure*.ipynb
-27. figures/SMfigs/SM*.ipynb
+26. `figures/fig*/Figure*.ipynb`
+27. `figures/SMfigs/SM*.ipynb`

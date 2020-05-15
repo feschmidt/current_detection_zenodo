@@ -1802,7 +1802,6 @@
 ├── figures
 │   ├── 000_myfigs.tar.gz
 │   ├── fig1
-│   │   ├── Figure12.pdf
 │   │   ├── Figure1.ipynb
 │   │   ├── Figure1.pdf
 │   │   └── temp
@@ -1926,4 +1925,4 @@
 ├── tree_info.txt
 └── Untitled.ipynb
 
-326 directories, 1600 files
+326 directories, 1599 files

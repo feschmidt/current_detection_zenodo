@@ -17,7 +17,11 @@ else
     echo
     read -p "What should be the timeout in second? " maxtime 
     echo "Waiting for 10s. Last chance to abort..."
-    sleep 10
+    for i in {1..10}
+    do
+       echo "$i ..."
+       sleep 1
+    done
     
     echo "Executing first set of py files"
     python analysis_classes.py
@@ -47,7 +51,6 @@ else
     python simulation_ResponseSingleTone_Power_all.py
     python model_inputoutput_vs_Ppump_Duffing_vectorized.py
     
-    
     echo "Generating data for figures"
     jupyter nbconvert --to notebook --inplace --execute --ExecutePreprocessor.timeout=$maxtime -y Plot_data_Fig1.ipynb
     jupyter nbconvert --to notebook --inplace --execute --ExecutePreprocessor.timeout=$maxtime -y Plot_data_Fig2.ipynb
@@ -59,5 +62,5 @@ else
     echo "Documentation"
     python python_info.py
     bash tree_info.sh
-
+    
 fi
