@@ -34,3 +34,5 @@ geo = {'s': 1e-6, 'w': .6e-6, 't': 80e-9, 'london': 158e-9, 'epsr': 11.9}
 tlpars = getlinepars(geo)
 [print(str(key)+':', val) for key, val in tlpars.items()]
 print()
+
+

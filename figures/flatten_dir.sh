@@ -1,0 +1,1 @@
+find 000_myfigs -mindepth 2 -type f -exec mv -i '{}' 000_myfigs ';'
